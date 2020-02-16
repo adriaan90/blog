@@ -209,6 +209,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146911969-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-146911969-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -879,205 +917,6 @@ I am also a researcher, using the material I teach to solve problems found in co
     
 
     
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="projects" class="home-section wg-portfolio   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-
-    <h1>Projects</h1>
-    
-
-  </div>
-  <div class="col-12 col-lg-8">
-
-
-
-    
-
-    
-
-      
-
-      
-      
-      
-      
-        
-      
-
-      <span class="d-none default-project-filter">*</span>
-
-      
-      
-      <div class="project-toolbar">
-        <div class="project-filters">
-          <div class="btn-toolbar">
-            <div class="btn-group flex-wrap">
-              
-                
-                
-                
-                  
-                
-                <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-              
-                
-                
-                
-                <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep Learning</a>
-              
-                
-                
-                
-                <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">Other</a>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    
-
-    <div class="isotope projects-container js-layout-masonry ">
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Demo">
-  <div class="card">
-    
-    
-    <a href="http://example.org" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/project/external-project/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_329522_550x0_resize_q90_lanczos.jpg" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="http://example.org" target="_blank" rel="noopener">External Project</a></h4>
-      
-      <div class="article-style">
-        <p>An example of linking directly to an external project website using <code>external_link</code>.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Deep-Learning">
-  <div class="card">
-    
-    
-    <a href="/project/internal-project/"  class="card-image hover-overlay">
-      <img src="/project/internal-project/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_224363_550x0_resize_q90_lanczos.jpg" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/project/internal-project/" >Internal Project</a></h4>
-      
-      <div class="article-style">
-        <p>An example of using the in-built project page.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-    </div>
 
   </div>
 </div>
