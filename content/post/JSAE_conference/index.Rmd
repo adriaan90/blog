@@ -23,7 +23,7 @@ LTC is a broad term used generally for combustion techniques where the overall p
 
 There is thus a balance that needs to be optimised to ensure an overall reduction of all emissions. This research focussed on achieving emissions reduction by optimising EGR and the engine’s fuel delivery.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-effects-of-temperature-and-homogeneity.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-effects-of-temperature-and-homogeneity.jpg){width=80%}
 
 For this research we looked at four parameters that can be used to achieve LTC and ultimately reduce NO<sub>x</sub> and CO emissions. NO<sub>x</sub> emissions is reduced by reducing the combustion temperature and CO emissions are reduced by increasing the homogeneity of the air fuel mixture. The table shown in the slide shows the effects on the combustion temperature and the homogeneity of the air fuel mixture as reported in the literature.
 
@@ -39,11 +39,11 @@ From this table, it can be seen that the four parameters have different effects 
 
 The Design of Experiment (DoE) statistical tool was used to determine the effect of each parameter on the formation of engine emissions and if it is significant or not. A DoE was also used to determine the impact of each parameter as well as determine an optimised point that resulted in overall reduced emissions.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-transient-vs-steady-state.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-transient-vs-steady-state.jpg){width=80%}
 
 Next we need to consider the drive cycle that will be used in the simulation. When we look at how past research has generated experimental emissions data, the majority of research found have used steady state engine operating points in their test methodology. The results from steady state experimentation cannot accurately represent real life scenarios. A transient drive cycle is needed to generate results that are comparable to real life. The WLTP was used in this research. It replaced the NEDC that has been used in the past to test the new vehicle entering the market.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-transient-vs-steady-state-WLTP.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-transient-vs-steady-state-WLTP.jpg){width=80%}
 
 I have created this figure to further illustrate the benefits of using the WLTP for real world emissions investigation. The graph shows the WLTP, in grey circles, as a function of engine speed and BMEP. The red crosses indicate the steady state points used by past research to investigate engine emissions. When looking at the graph, clear gaps are evident in the engine operating map that is not covered by the research considered. The use of a transient drive cycle is thus appropriate if the results needed to be comparable to a real world scenario.
 
@@ -54,24 +54,25 @@ An engine simulation was used to investigate the effects of varying the differen
 The Wiebe combustion model was used in this research. Linear regression models was generated for the start of combustion crank angle degree (CAD), premixed fuel mass fraction burned and Wiebe exponent by using the cylinder pressure data. This is necessary as we are simulating a transient drive cycle as well as changing engine parameters that influence combustion.
 The emission models were validated using exhaust gas analyser experimental data. The engine simulation can only simulate CO emissions and NO<sub>x</sub> emissions.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-cylinder-pressure-graphs-validation.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-cylinder-pressure-graphs-validation.jpg){width=80%}
+
 
 After the models were calibrated, it was compared to experimental data to check its accuracy. Here two cylinder pressure graphs are shown; one at 25% load and 1500rpm and the other at 75% load and 3000rpm. The experimental data is shown in a solid line and the simulated model is shown in dashed lines. As can be seen, the simulated results correlate well with the experimental data.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-emission-graphs-validation.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-emission-graphs-validation.jpg){width=80%}
 
 Same can be said of the simulated emissions. The simulated emission results for the CO emissions and NOx emissions correlate well with the experimental data. We thus have confidence in our simulation and can now move on to setting up the DoE.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-DoE-setup-for-simulation.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-DoE-setup-for-simulation.jpg){width=80%}
 
 When setting up the factorial design, a 2^4 factorial design was chosen as there are 4 parameters that will be investigated. These are EGR percentage, pilot injection duration and main and pilot injection SOI. The test engine is using an aftermarket ECU, which have operating maps loaded onto it by default. These operating maps are used as the starting point for the DoE. The EGR percentage map is in the form of an island with maximum EGR at approximately 2500 rpm and 10 % throttle position. Here is an example of an EGR map with 47% as the maximum percentage. The value as given by the DoE will always be the maximum value and the maps will be scaled according to the maximum value.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-first-factorial-design.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-first-factorial-design.jpg){width=80%}
 
 Shown here is a table with the low and high values of the first factorial design.
 The EGR percentage has a low and high value of 0 % and 10 %, pilot injection and main injection SOI is advanced by one CAD and retarded by 1 CAD. The pilot injection duration is decreased by 100 μs and increased by 100 μs. Similar tables were created for the second and third factorial designs based on the results from the previous factorial design.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-generation-of-next-factorial-designs.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-generation-of-next-factorial-designs.jpg){width=80%}
 
 In order to determine the configuration that will reduce emissions the most, we opted to follow the path of greatest emission reduction using multiple factorial designs. After each factorial design, The desirability function was used to determine the best configuration of the parameters under investigation. This then was used to set up the next factorial design. This can be explained in the figure shown.
 
@@ -87,14 +88,14 @@ Shown on this slide is the desirability function plot for the third factorial de
 
 The EGR percentage has a significant effect on the NO<sub>x</sub> emissions and CO emissions as the graph lines have a steep gradient. The desirability function plot at the top in the form of a half circle indicate that the maximum desirability value will be reached for an EGR percentage at approximately 36 %.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-emissions-results.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-emissions-results.jpg){width=80%}
 
 When we put all the factorial designs’ results on one graph, we can get a better overall picture.
 For the second factorial design, we optimised towards a maximum of CO emissions as per the Euro 4 limits. This resulted in a reduction of approximately 20% of NO<sub>x</sub> when we use a maximum of 12% EGR.
 
 To further investigate LTC, for the third factorial design, we opted to continue to increase the EGR percentage to 47.5%. This resulted in a reduction in NO<sub>x</sub> of 85% to 0.55g/km where the Euro 4 limit is 0.25g/km. The CO emissions greatly increased as a result of the EGR percentage increasing, to 22.58g/km.
 
-![](/post/JSAE_conference_files/JSAE-PFL2019-check-for-LTC.jpg)
+![](/post/JSAE_conference/index_files/JSAE-PFL2019-check-for-LTC.jpg){width=80%}
 
 Next we wanted to see if we achieved LTC.  This graph shows the peak temperature for combustion with no LTC techniques used as well as for the combustion temperature for the third factorial design. The difference in peak temperature between the two graphs is approximately 100 °K.
 
