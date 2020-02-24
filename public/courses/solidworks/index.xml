@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | Adriaan&#39;s blog</title>
+    <link>/courses/solidworks/</link>
+      <atom:link href="/courses/solidworks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 16 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Overview</title>
+      <link>/courses/solidworks/</link>
+    </image>
+    
+    <item>
+      <title>Learning outcomes</title>
+      <link>/courses/solidworks/1-learning-outcomes/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-learning-outcomes/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This lesson introduces 2D sketching, the bais of modeling in SolidWorks.
+Sketches are used for all sketched features in SolidWorks including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extrusions&lt;/li&gt;
+&lt;li&gt;Revolves&lt;/li&gt;
+&lt;li&gt;Sweeps&lt;/li&gt;
+&lt;li&gt;Lofts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this lesson, only extruded features will be covered. The others will be covered in detail in later lessons.&lt;/p&gt;
+&lt;h2 id=&#34;learning-outcomes&#34;&gt;Learning outcomes&lt;/h2&gt;
+&lt;p&gt;Upon the successful completion of this lesson, you will be able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a part.&lt;/li&gt;
+&lt;li&gt;Insert a new sketch.&lt;/li&gt;
+&lt;li&gt;Add sketch geometry&lt;/li&gt;
+&lt;li&gt;Establish sketch relations between pieces of geometry.&lt;/li&gt;
+&lt;li&gt;Understand the state of the sketch.&lt;/li&gt;
+&lt;li&gt;Extrude the sketch into a solid.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a part in SolidWorks</title>
+      <link>/courses/solidworks/1-creata-a-part/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-creata-a-part/</guid>
+      <description>&lt;h2 id=&#34;stages-in-the-sketch-process&#34;&gt;Stages in the sketch process&lt;/h2&gt;
+&lt;p&gt;Every sketch has several characteristics that contribute to its shape, size and orientation. You will always follow the same workflow when creating any part:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create part.&lt;/li&gt;
+&lt;li&gt;Sketch geometry.&lt;/li&gt;
+&lt;li&gt;Add relations.&lt;/li&gt;
+&lt;li&gt;Extrude sketch.&lt;/li&gt;
+&lt;li&gt;Repeat&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;create-a-part&#34;&gt;Create a part&lt;/h2&gt;
+&lt;p&gt;When you first open up SolidWorks, a window will appear prompting you to create a new SolidWorks document. This can either be a part, assembly or drawing. If this window does not appear, you can create a new part by selecting: &lt;span class=&#34;markup-quote&#34;&gt;File, New&lt;/span&gt; from the main menu.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-New-file.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Always remember to save your part files frequently. Try and save it as soon as you have created a new document.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-is-sketching-in-solidworks&#34;&gt;What is sketching in SolidWorks?&lt;/h2&gt;
+&lt;p&gt;Sketching is the act of creating a 2D profile comprised of a wireframe geometry. Typical geometry include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lines&lt;/li&gt;
+&lt;li&gt;Arcs&lt;/li&gt;
+&lt;li&gt;Circles&lt;/li&gt;
+&lt;li&gt;Ellipses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;creating-a-sketch&#34;&gt;Creating a sketch&lt;/h2&gt;
+&lt;p&gt;To create a sketch, you must choose a plane on which to sketch. The system provides three initial planes by default. They are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Front plane&lt;/li&gt;
+&lt;li&gt;Top plane&lt;/li&gt;
+&lt;li&gt;Right plane&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is important to choose the correct plane to start your sketch on as this choice can influence how your drawing of the part is going to be layed out.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-default-planes.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When creating a new sketch, &lt;span class=&#34;markup-quote&#34;&gt;Insert Sketch&lt;/span&gt; opens up the sketcher on the selected plane. If you have not selected a plane when you insert a sketch, SolidWorks will ask you to select the plane on which you want to sketch on.&lt;/p&gt;
+&lt;h2 id=&#34;active-sketch-environment&#34;&gt;Active sketch environment&lt;/h2&gt;
+&lt;p&gt;When you have selected a plane to sketch on, the selected plane will rotate so it is parallel to the screen. &lt;strong&gt;This only happens for the first sketch of the part.&lt;/strong&gt; You will see two red arrows originating from the same point, one pointing upwards and the other points right. It represents the &lt;strong&gt;sketch origin&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;confirmation-corner&#34;&gt;Confirmation corner&lt;/h2&gt;
+&lt;p&gt;When any SolidWorks commands are active, a symbol or a set of symbols appears in the upper right corner of the graphics area. This is called the &lt;strong&gt;confirmation corner.&lt;/strong&gt; When a sketch is opened, the confirmation corner displays two symbols. One looks like the sketch symbol and the other is a red X. These symbols provide a visual reminder that you are active in a sketch.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clicking the sketch symbol exists the sketch and &lt;em&gt;save any changes&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clicking the red X exits the sketch and discards any changes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When other commands are active, the confirmation corner displays a green check mark and a red X. The check mark executes the current command and the X cancels the command.&lt;/p&gt;
+&lt;h2 id=&#34;sketch-entities&#34;&gt;Sketch entities&lt;/h2&gt;
+&lt;p&gt;SolidWorks offers a vaiety of sketch tools for creating profile geometry. The &lt;strong&gt;line&lt;/strong&gt; tool will be used most of the time. Other sketch entities include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Circle&lt;/li&gt;
+&lt;li&gt;Arcs&lt;/li&gt;
+&lt;li&gt;Ellipse&lt;/li&gt;
+&lt;li&gt;Partial ellipse&lt;/li&gt;
+&lt;li&gt;Parabola&lt;/li&gt;
+&lt;li&gt;Spline&lt;/li&gt;
+&lt;li&gt;Arc slots&lt;/li&gt;
+&lt;li&gt;Polygon&lt;/li&gt;
+&lt;li&gt;Rectangle&lt;/li&gt;
+&lt;li&gt;Point&lt;/li&gt;
+&lt;li&gt;Centerline&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basic-sketching&#34;&gt;Basic sketching&lt;/h2&gt;
+&lt;p&gt;There are two techniques to sketch a geometry:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Click-Click&lt;/strong&gt;
+Position the cursor where you want the line to start. Click the left mouse button. Move the cursor to where you want the ine to end. A preview of the sketch entity will follow the cursor. Cick the left mouse bitton a second  time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Click-Drag&lt;/strong&gt;
+Position the cursor where you want the line to start. Press and hold the left mouse button. Drag the cursor to where you want the sketch entity to end. A preview of the sketch entity will follow the the cursor. Release the left mouse button.&lt;/p&gt;
+&lt;h2 id=&#34;sketching-a-line&#34;&gt;Sketching a line&lt;/h2&gt;
+&lt;p&gt;Sketch a line by selecting the line tool. Click on the origin and move your mouse horizontally to the right. A preview of the line will appear. Click again to end the line.&lt;/p&gt;
+&lt;p&gt;Do not be too concerned with making the line the exact length you want it to be at the start when you create the sketch. Your sketch only need to be the approximate size of your final sketch. The dimensioning tool will be used later to make the size exact.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-vertical-line.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Next, starting at the end of the horizontal line, sketch a line at an angle.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-angled-line.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;inference-lines&#34;&gt;Inference lines&lt;/h3&gt;
+&lt;p&gt;Dashed inference lines appear when drawing lines to help you &amp;lsquo;line-up&amp;rsquo; with existing geometry. These lines include existing line vecotrs, normals, horizontals, veritcals, tangents and centers.&lt;/p&gt;
+&lt;p&gt;Note that some lines capture actual geometric relations, while other simply act as a guide or reference when sketching.&lt;/p&gt;
+&lt;p&gt;A difference in the color of the inference lines will distinguish them.&lt;/p&gt;
+&lt;p&gt;In the picture below, the line labeled &amp;ldquo;A&amp;rdquo; are olive-green and if the sketch line snaps to them, will capture either a tangent or perpendicuar relationship.&lt;/p&gt;
+&lt;p&gt;The line labeled &amp;ldquo;B&amp;rdquo; is blue. It only provides a reference, in this case verical, to the other endpoint. If the sketch line is ended at this point, no vertical relation will be captured.&lt;/p&gt;
+&lt;h3 id=&#34;sketch-feedback&#34;&gt;Sketch feedback&lt;/h3&gt;
+&lt;p&gt;The sketcher has many feedback features. The cursor will change to show what tipes of entity is being created. It will also indicate what selections on the existing geometry, such as end, coincident or midpoint, are available using a red dot when the cursor is on it.&lt;/p&gt;
+&lt;p&gt;The most three common feedback symbols are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Endpoints:&lt;/strong&gt; Yellow concentric circles appear at the Endpoint when the cursor is over it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Midpoint:&lt;/strong&gt; The midpoint appears as a square. It changes to red when the cursor is over the line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Coincident:&lt;/strong&gt; The quadrant points of the circle appear with a concentric circle over the centerpoint.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;closing-the-sketch&#34;&gt;Closing the sketch&lt;/h3&gt;
+&lt;p&gt;Close the sketch with a fina line connected to the starting point of the first line.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-completed-sketch.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When you want to turn off a sketching tool, you can either press the &lt;span class=&#34;markup-quote&#34;&gt;Esc&lt;/span&gt; key, click the line tool a second time, or right-click and the graphics area and choose &lt;span class=&#34;markup-quote&#34;&gt;Select&lt;/span&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sketch relations</title>
+      <link>/courses/solidworks/1-sketch-relations/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-sketch-relations/</guid>
+      <description>&lt;h2 id=&#34;status-of-the-sketch&#34;&gt;Status of the sketch&lt;/h2&gt;
+&lt;p&gt;Sketches can be in one of five definition states at any time. The status of a sketch depends on geometric relations between geometry and the dimensions that define it. The three most common states are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Under defined:&lt;/strong&gt; There is inadequate definition of the sketch, but the sketch can still be used to create features. This is acceptable as most of the time during the initial stages of design, there is not enough information to fully define the sketch. Under defined geometry is &lt;span class=&#34;markup-quote&#34;&gt;blue&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fully defined:&lt;/strong&gt; The sketch has complete information. Fully defined geometry is &lt;span class=&#34;markup-quote&#34;&gt;black&lt;/span&gt;. A general rule is that when a part is released for manufacturing, the sketches within it should be fully defined.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Over defined:&lt;/strong&gt; The sketch has duplicate dimensions or conflicting relations and it should not be used until repaired. Extra dimensions and relations should be deleted. Over defined geometry is &lt;span class=&#34;markup-quote&#34;&gt;red&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;check-under-defined-sketch-geometry&#34;&gt;Check under defined sketch geometry&lt;/h2&gt;
+&lt;h3 id=&#34;check-sketch-status&#34;&gt;Check sketch status&lt;/h3&gt;
+&lt;p&gt;A sketch is &lt;span class=&#34;markup-quote&#34;&gt;Under defined&lt;/span&gt; because some of the geometry is blue. Note that endpoints of a line can be a different color and different state than the line itself.&lt;/p&gt;
+&lt;p&gt;For example, a vertical line from the origin is black because it is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vertical&lt;/li&gt;
+&lt;li&gt;Attached to the origin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, the uppermost endpoint is blue because the length of the line is under defined.&lt;/p&gt;
+&lt;h3 id=&#34;dragging&#34;&gt;Dragging&lt;/h3&gt;
+&lt;p&gt;Under defined geometry can be dragged to new locations or its size changed. Fully defined geometry cannot. You can determine how the geometry is under defined by dragging the blue parts of the geometry. The lines will either move or increase/decrease in length. This will give you an indication that you need to define the length of the line or need to define the location of the line.&lt;/p&gt;
+&lt;img src=&#34;/courses/SolidWorks/1-Sketch-relations_files/SolidWorks-design-intent2.PNG&#34; alt=&#34;Design intent&#34; width=&#34;80%&#34;/&gt;
+&lt;h2 id=&#34;design-intent&#34;&gt;Design intent&lt;/h2&gt;
+&lt;p&gt;The design intent governs how the part is built and how it will change. In a sketch, design intent is controlled by a combination of two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sketch relations:&lt;/strong&gt; Create geometric relationships such as parallel, collinear, perpendicular, or coincident between sketch elements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dimensions:&lt;/strong&gt; Dimensions are used to define the size and location of the sketch geometry. Linear, radial, diameter and angular dimensions can be added.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To fully define a sketch &lt;em&gt;and&lt;/em&gt; capture the desired design intent requires understanding and applying a combination of relations and dimensions.&lt;/p&gt;
+&lt;h2 id=&#34;sketch-relations&#34;&gt;Sketch relations&lt;/h2&gt;
+&lt;p&gt;Sketch relations are used to force a behaviour on a sketch element thereby capturing design intent. Some relations are added automatically when you create the initial sketch and others can be added later manually.&lt;/p&gt;
+&lt;p&gt;You can check the existing relations by either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Symbols appear next to the geometry to indicate what relations are associate with that entity. In the picture below, the arc has three relations: two tangent and one equal.&lt;/li&gt;
+&lt;li&gt;Select the skech entity and the Property Manager show the relations associated with that entity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can delete a relation by either clicking the relation icon and pressing the &lt;span class=&#34;markup-quote&#34;&gt;Delete&lt;/span&gt; button. You can also right click on the relation icon and selecting the delete option.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;examples-of-sketch-relations&#34;&gt;Examples of sketch relations&lt;/h2&gt;
+&lt;p&gt;There are many different sketch relations. Which ones are valid depends on the combination of geometry that you select.
+The following are sketch relations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Coincident&lt;/li&gt;
+&lt;li&gt;Merge&lt;/li&gt;
+&lt;li&gt;Parallel&lt;/li&gt;
+&lt;li&gt;Perpendicular&lt;/li&gt;
+&lt;li&gt;Collinear&lt;/li&gt;
+&lt;li&gt;Horizontal&lt;/li&gt;
+&lt;li&gt;Vertical&lt;/li&gt;
+&lt;li&gt;Equal&lt;/li&gt;
+&lt;li&gt;Midpoint&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dimensions</title>
+      <link>/courses/solidworks/1-dimensions/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-dimensions/</guid>
+      <description>&lt;h2 id=&#34;smart-dimensions&#34;&gt;Smart dimensions&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;Smart Dimension&lt;/em&gt; tool determines the proper type of dimensions based on the geometry chosen. For example, if you pick an arc the system will create a radial dimension. If you pick a circle, you will get a diameter dimension, while selecting two parallel lines will create a linear dimension between them. In cases where the &lt;em&gt;Smart Dimension&lt;/em&gt; tool is not quite smart enough, you have the option of selecting endpoints and moving the dimensions to different measurement positions.&lt;/p&gt;
+&lt;h2 id=&#34;where-to-find-it&#34;&gt;Where to find it&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;Smart Dimension&lt;/em&gt; tool can be selected either by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Selecting &lt;em&gt;Smart Dimension&lt;/em&gt; tool from the &lt;em&gt;Tools&lt;/em&gt; option&lt;/li&gt;
+&lt;li&gt;Right-click on the canvas and select &lt;em&gt;Smart Dimension&lt;/em&gt; from the shortcut menu&lt;/li&gt;
+&lt;li&gt;On the Dimensions/Relations toolbar, pick &lt;em&gt;Smart Dimension&lt;/em&gt; tool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;creating-and-previewing-a-dimension&#34;&gt;Creating and previewing a dimension&lt;/h2&gt;
+&lt;p&gt;As you select a line in the sketch geometry with the dimension tool, the system creates a preview of the dimension. The preview enables you to ensure that you have captured the correct dimension as well as enable you to see all the different options there are.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clicking the right mouse button after you have selected the geometry with the dimension tool, locks the orientation of the dimension preview.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can place the dimension anywhere on the canvas by clicking the left mouse button. Once you have placed the dimension, a &lt;em&gt;Modify&lt;/em&gt; tool will appear, displaying the current value of the line you selected. You can enter a new value for the line in the box provided. There is a thumbwheel that will also incrementally increase/decrease the value in the &lt;em&gt;Modify&lt;/em&gt; toolbox.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can change the value of the dimension later as well, by just double-clicking on the dimension which will result in the &lt;em&gt;Modify&lt;/em&gt; tool window appearing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;angular-dimensions&#34;&gt;Angular dimensions&lt;/h2&gt;
+&lt;p&gt;Angular dimensions can be created using the same dimension tool used for linear, radial and diameter dimensions. Select either two lines that are both non-collinear and non-parallel, or select three non-collinear endpoints.
+Depending on where you place the angular dimension, you can get the interior or exterior angle, the acute angle, or the oblique angle.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Dimensions_files/SolidWorks-fully-defined-sketch.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extrude</title>
+      <link>/courses/solidworks/1-extrude/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-extrude/</guid>
+      <description>&lt;h2 id=&#34;extrude-the-geometry&#34;&gt;Extrude the geometry&lt;/h2&gt;
+&lt;p&gt;Once the sketch is completed, it can be extruded to create the first feature of the part. There are many options for extruding a sketch including the start and end conditions, draft and depth of extrusion, which will be discussed in more detail in later lessons.
+Typically, extrusions take place in the direction normal to the sketch plane.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-select-the-extrude-feature&#34;&gt;How to select the extrude feature&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;From the menu: &lt;strong&gt;Insert, Boss/Base, Extrude&amp;hellip;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On the Features toolbar, choose &lt;strong&gt;Boss/Base&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;extrusion-options&#34;&gt;Extrusion options&lt;/h3&gt;
+&lt;p&gt;As soon as you select the Extrude feature, the view of the geometry will change to trimetric and a preview of the extrusion will show with the default depth.
+Handles (purple arrows) appear that can be used to drag the preview to the desired depth. The handles are colored for the active direction and gray for inactive direction. A &lt;strong&gt;Ruler&lt;/strong&gt; will appear when you use the handle to edit the depth of the extrusion.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Extrude_files/SolidWorks-extrude-sketch-with-ruler.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Different extrusion settings are available for you to choose from to determine the depth of your extrusion.&lt;/p&gt;
+&lt;p&gt;Once the feature is completed, the sketch will be absorbed into the &lt;span class=&#34;markup-quote&#34;&gt;Extrude1&lt;/span&gt; feature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sketch Guidelines</title>
+      <link>/courses/solidworks/1-sketch-guidelines/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-sketch-guidelines/</guid>
+      <description>&lt;p&gt;Here are a few &lt;em&gt;rules of thumb&lt;/em&gt; for sketching in SolidWorks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep your sketch simple. Simple sketches are easier to edit, and are less likely to develop errors.&lt;/li&gt;
+&lt;li&gt;Make use of the origin in your first sketch.&lt;/li&gt;
+&lt;li&gt;Create sketch geometry first, add geometric relationships second, and then add your dimensions last. Dimensions can sometimes interfere with the addition of required relations.&lt;/li&gt;
+&lt;li&gt;Use geometric relations wherever possible to maintain design intent.&lt;/li&gt;
+&lt;li&gt;Add or edit dimensions on the closest/smallest geometry first, then work our way to the outer/larger geometry to prevent geometry overlap.&lt;/li&gt;
+&lt;li&gt;Use relations, linked values and equations to reduce the number of independent dimensions needed.&lt;/li&gt;
+&lt;li&gt;Take advantage of symmetry. Use &lt;strong&gt;Mirror&lt;/strong&gt; or &lt;strong&gt;Dynamic Mirror&lt;/strong&gt; sketch tool to mirror sketch elements and add symmetrical relations.&lt;/li&gt;
+&lt;li&gt;Be flexible. It may be necessary to change the order in which you are adding dimensions or relations.&lt;/li&gt;
+&lt;li&gt;Fix errors as they occur.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

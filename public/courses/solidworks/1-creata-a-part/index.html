@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Adriaan van Niekerk">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Stages in the sketch process Every sketch has several characteristics that contribute to its shape, size and orientation. You will always follow the same workflow when creating any part:
+ Create part. Sketch geometry. Add relations. Extrude sketch. Repeat&hellip;  Create a part When you first open up SolidWorks, a window will appear prompting you to create a new SolidWorks document. This can either be a part, assembly or drawing. If this window does not appear, you can create a new part by selecting: File, New from the main menu.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/solidworks/1-creata-a-part/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/solidworks/1-creata-a-part/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Adriaan&#39;s blog">
+  <meta property="og:url" content="/courses/solidworks/1-creata-a-part/">
+  <meta property="og:title" content="Creating a part in SolidWorks | Adriaan&#39;s blog">
+  <meta property="og:description" content="Stages in the sketch process Every sketch has several characteristics that contribute to its shape, size and orientation. You will always follow the same workflow when creating any part:
+ Create part. Sketch geometry. Add relations. Extrude sketch. Repeat&hellip;  Create a part When you first open up SolidWorks, a window will appear prompting you to create a new SolidWorks document. This can either be a part, assembly or drawing. If this window does not appear, you can create a new part by selecting: File, New from the main menu."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-02-16T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-02-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Creating a part in SolidWorks | Adriaan&#39;s blog</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Adriaan&#39;s blog</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Adriaan&#39;s blog</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/solidworks/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/solidworks/1-learning-outcomes/">Introduction to Sketching</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/solidworks/1-learning-outcomes/">Learning outcomes</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/solidworks/1-creata-a-part/">Create a part</a>
+      </li>
+      
+      <li >
+        <a href="/courses/solidworks/1-sketch-relations/">Sketch relations</a>
+      </li>
+      
+      <li >
+        <a href="/courses/solidworks/1-dimensions/">Sketch dimensions</a>
+      </li>
+      
+      <li >
+        <a href="/courses/solidworks/1-extrude/">Extrude the sketch</a>
+      </li>
+      
+      <li >
+        <a href="/courses/solidworks/1-sketch-guidelines/">Sketching guidelines</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#stages-in-the-sketch-process">Stages in the sketch process</a></li>
+    <li><a href="#create-a-part">Create a part</a></li>
+    <li><a href="#what-is-sketching-in-solidworks">What is sketching in SolidWorks?</a></li>
+    <li><a href="#creating-a-sketch">Creating a sketch</a></li>
+    <li><a href="#active-sketch-environment">Active sketch environment</a></li>
+    <li><a href="#confirmation-corner">Confirmation corner</a></li>
+    <li><a href="#sketch-entities">Sketch entities</a></li>
+    <li><a href="#basic-sketching">Basic sketching</a></li>
+    <li><a href="#sketching-a-line">Sketching a line</a>
+      <ul>
+        <li><a href="#inference-lines">Inference lines</a></li>
+        <li><a href="#sketch-feedback">Sketch feedback</a></li>
+        <li><a href="#closing-the-sketch">Closing the sketch</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Creating a part in SolidWorks</h1>
+
+          <div class="article-style">
+            <h2 id="stages-in-the-sketch-process">Stages in the sketch process</h2>
+<p>Every sketch has several characteristics that contribute to its shape, size and orientation. You will always follow the same workflow when creating any part:</p>
+<ol>
+<li>Create part.</li>
+<li>Sketch geometry.</li>
+<li>Add relations.</li>
+<li>Extrude sketch.</li>
+<li>Repeat&hellip;</li>
+</ol>
+<h2 id="create-a-part">Create a part</h2>
+<p>When you first open up SolidWorks, a window will appear prompting you to create a new SolidWorks document. This can either be a part, assembly or drawing. If this window does not appear, you can create a new part by selecting: <span class="markup-quote">File, New</span> from the main menu.</p>
+<p><img src="/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-New-file.PNG" alt=""></p>
+<blockquote>
+<p>Always remember to save your part files frequently. Try and save it as soon as you have created a new document.</p>
+</blockquote>
+<h2 id="what-is-sketching-in-solidworks">What is sketching in SolidWorks?</h2>
+<p>Sketching is the act of creating a 2D profile comprised of a wireframe geometry. Typical geometry include:</p>
+<ul>
+<li>Lines</li>
+<li>Arcs</li>
+<li>Circles</li>
+<li>Ellipses</li>
+</ul>
+<h2 id="creating-a-sketch">Creating a sketch</h2>
+<p>To create a sketch, you must choose a plane on which to sketch. The system provides three initial planes by default. They are:</p>
+<ul>
+<li>Front plane</li>
+<li>Top plane</li>
+<li>Right plane</li>
+</ul>
+<blockquote>
+<p>It is important to choose the correct plane to start your sketch on as this choice can influence how your drawing of the part is going to be layed out.</p>
+</blockquote>
+<p><img src="/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-default-planes.PNG" alt=""></p>
+<p>When creating a new sketch, <span class="markup-quote">Insert Sketch</span> opens up the sketcher on the selected plane. If you have not selected a plane when you insert a sketch, SolidWorks will ask you to select the plane on which you want to sketch on.</p>
+<h2 id="active-sketch-environment">Active sketch environment</h2>
+<p>When you have selected a plane to sketch on, the selected plane will rotate so it is parallel to the screen. <strong>This only happens for the first sketch of the part.</strong> You will see two red arrows originating from the same point, one pointing upwards and the other points right. It represents the <strong>sketch origin</strong>.</p>
+<h2 id="confirmation-corner">Confirmation corner</h2>
+<p>When any SolidWorks commands are active, a symbol or a set of symbols appears in the upper right corner of the graphics area. This is called the <strong>confirmation corner.</strong> When a sketch is opened, the confirmation corner displays two symbols. One looks like the sketch symbol and the other is a red X. These symbols provide a visual reminder that you are active in a sketch.</p>
+<blockquote>
+<p>Clicking the sketch symbol exists the sketch and <em>save any changes</em>.</p>
+</blockquote>
+<blockquote>
+<p>Clicking the red X exits the sketch and discards any changes.</p>
+</blockquote>
+<p>When other commands are active, the confirmation corner displays a green check mark and a red X. The check mark executes the current command and the X cancels the command.</p>
+<h2 id="sketch-entities">Sketch entities</h2>
+<p>SolidWorks offers a vaiety of sketch tools for creating profile geometry. The <strong>line</strong> tool will be used most of the time. Other sketch entities include:</p>
+<ul>
+<li>Circle</li>
+<li>Arcs</li>
+<li>Ellipse</li>
+<li>Partial ellipse</li>
+<li>Parabola</li>
+<li>Spline</li>
+<li>Arc slots</li>
+<li>Polygon</li>
+<li>Rectangle</li>
+<li>Point</li>
+<li>Centerline</li>
+</ul>
+<h2 id="basic-sketching">Basic sketching</h2>
+<p>There are two techniques to sketch a geometry:</p>
+<p><strong>Click-Click</strong>
+Position the cursor where you want the line to start. Click the left mouse button. Move the cursor to where you want the ine to end. A preview of the sketch entity will follow the cursor. Cick the left mouse bitton a second  time.</p>
+<p><strong>Click-Drag</strong>
+Position the cursor where you want the line to start. Press and hold the left mouse button. Drag the cursor to where you want the sketch entity to end. A preview of the sketch entity will follow the the cursor. Release the left mouse button.</p>
+<h2 id="sketching-a-line">Sketching a line</h2>
+<p>Sketch a line by selecting the line tool. Click on the origin and move your mouse horizontally to the right. A preview of the line will appear. Click again to end the line.</p>
+<p>Do not be too concerned with making the line the exact length you want it to be at the start when you create the sketch. Your sketch only need to be the approximate size of your final sketch. The dimensioning tool will be used later to make the size exact.</p>
+<p><img src="/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-vertical-line.PNG" alt=""></p>
+<p>Next, starting at the end of the horizontal line, sketch a line at an angle.</p>
+<p><img src="/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-angled-line.PNG" alt=""></p>
+<h3 id="inference-lines">Inference lines</h3>
+<p>Dashed inference lines appear when drawing lines to help you &lsquo;line-up&rsquo; with existing geometry. These lines include existing line vecotrs, normals, horizontals, veritcals, tangents and centers.</p>
+<p>Note that some lines capture actual geometric relations, while other simply act as a guide or reference when sketching.</p>
+<p>A difference in the color of the inference lines will distinguish them.</p>
+<p>In the picture below, the line labeled &ldquo;A&rdquo; are olive-green and if the sketch line snaps to them, will capture either a tangent or perpendicuar relationship.</p>
+<p>The line labeled &ldquo;B&rdquo; is blue. It only provides a reference, in this case verical, to the other endpoint. If the sketch line is ended at this point, no vertical relation will be captured.</p>
+<h3 id="sketch-feedback">Sketch feedback</h3>
+<p>The sketcher has many feedback features. The cursor will change to show what tipes of entity is being created. It will also indicate what selections on the existing geometry, such as end, coincident or midpoint, are available using a red dot when the cursor is on it.</p>
+<p>The most three common feedback symbols are:</p>
+<ul>
+<li>
+<p><strong>Endpoints:</strong> Yellow concentric circles appear at the Endpoint when the cursor is over it.</p>
+</li>
+<li>
+<p><strong>Midpoint:</strong> The midpoint appears as a square. It changes to red when the cursor is over the line.</p>
+</li>
+<li>
+<p><strong>Coincident:</strong> The quadrant points of the circle appear with a concentric circle over the centerpoint.</p>
+</li>
+</ul>
+<h3 id="closing-the-sketch">Closing the sketch</h3>
+<p>Close the sketch with a fina line connected to the starting point of the first line.</p>
+<p><img src="/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-completed-sketch.PNG" alt=""></p>
+<blockquote>
+<p>When you want to turn off a sketching tool, you can either press the <span class="markup-quote">Esc</span> key, click the line tool a second time, or right-click and the graphics area and choose <span class="markup-quote">Select</span>.</p>
+</blockquote>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/solidworks/1-learning-outcomes/" rel="next">Learning outcomes</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/solidworks/1-sketch-relations/" rel="prev">Sketch relations</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Feb 16, 2020</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5cSolidWorks%5c1-Creata-a-part.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

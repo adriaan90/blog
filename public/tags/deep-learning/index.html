@@ -209,54 +209,16 @@
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146911969-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-146911969-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
   
-  <link rel="alternate" href="/tags/deep-learning/index.xml" type="application/rss+xml" title="Adriaan van Niekerk">
+  <link rel="alternate" href="/tags/deep-learning/index.xml" type="application/rss+xml" title="Adriaan&#39;s blog">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_huefaaa86fd93e78a5213a000c09c6cb01_17351_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_huefaaa86fd93e78a5213a000c09c6cb01_17351_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/tags/deep-learning/">
 
@@ -271,9 +233,9 @@
   
   <meta property="twitter:card" content="summary">
   
-  <meta property="og:site_name" content="Adriaan van Niekerk">
+  <meta property="og:site_name" content="Adriaan&#39;s blog">
   <meta property="og:url" content="/tags/deep-learning/">
-  <meta property="og:title" content="Deep Learning | Adriaan van Niekerk">
+  <meta property="og:title" content="Deep Learning | Adriaan&#39;s blog">
   <meta property="og:description" content="Lecturer in Design and Dynamics"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
@@ -294,7 +256,7 @@
 
 
 
-  <title>Deep Learning | Adriaan van Niekerk</title>
+  <title>Deep Learning | Adriaan&#39;s blog</title>
 
 </head>
 
@@ -345,7 +307,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Adriaan van Niekerk</a>
+      <a class="navbar-brand" href="/">Adriaan&#39;s blog</a>
     </div>
     
 
@@ -358,7 +320,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Adriaan van Niekerk</a>
+      <a class="navbar-brand" href="/">Adriaan&#39;s blog</a>
     </div>
     
 
