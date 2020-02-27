@@ -28,11 +28,11 @@
   
     
   
-  <meta name="description" content="Status of the sketch Sketches can be in one of five definition states at any time. The status of a sketch depends on geometric relations between geometry and the dimensions that define it. The three most common states are:
- Under defined: There is inadequate definition of the sketch, but the sketch can still be used to create features. This is acceptable as most of the time during the initial stages of design, there is not enough information to fully define the sketch.">
+  <meta name="description" content="Video content of course chapter This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.
+  ">
 
   
-  <link rel="alternate" hreflang="en-us" href="/courses/solidworks/1-sketch-relations/">
+  <link rel="alternate" hreflang="en-us" href="/courses/solidworks/1-videos/">
 
   
 
@@ -219,7 +219,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/courses/solidworks/1-sketch-relations/">
+  <link rel="canonical" href="/courses/solidworks/1-videos/">
 
   
   
@@ -233,16 +233,16 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Adriaan&#39;s blog">
-  <meta property="og:url" content="/courses/solidworks/1-sketch-relations/">
-  <meta property="og:title" content="Sketch relations | Adriaan&#39;s blog">
-  <meta property="og:description" content="Status of the sketch Sketches can be in one of five definition states at any time. The status of a sketch depends on geometric relations between geometry and the dimensions that define it. The three most common states are:
- Under defined: There is inadequate definition of the sketch, but the sketch can still be used to create features. This is acceptable as most of the time during the initial stages of design, there is not enough information to fully define the sketch."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/courses/solidworks/1-videos/">
+  <meta property="og:title" content="Video lecture | Adriaan&#39;s blog">
+  <meta property="og:description" content="Video content of course chapter This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.
+  "><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-02-17T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-02-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-02-17T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-02-27T00:00:00&#43;00:00">
   
 
   
@@ -261,7 +261,7 @@
 
 
 
-  <title>Sketch relations | Adriaan&#39;s blog</title>
+  <title>Video lecture | Adriaan&#39;s blog</title>
 
 </head>
 
@@ -505,7 +505,7 @@
         <a href="/courses/solidworks/1-learning-outcomes/">Learning outcomes</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/courses/solidworks/1-videos/">Video content</a>
       </li>
       
@@ -513,7 +513,7 @@
         <a href="/courses/solidworks/1-creata-a-part/">Create a part</a>
       </li>
       
-      <li class="active">
+      <li >
         <a href="/courses/solidworks/1-sketch-relations/">Sketch relations</a>
       </li>
       
@@ -547,16 +547,7 @@
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#status-of-the-sketch">Status of the sketch</a></li>
-    <li><a href="#check-under-defined-sketch-geometry">Check under defined sketch geometry</a>
-      <ul>
-        <li><a href="#check-sketch-status">Check sketch status</a></li>
-        <li><a href="#dragging">Dragging</a></li>
-      </ul>
-    </li>
-    <li><a href="#design-intent">Design intent</a></li>
-    <li><a href="#sketch-relations">Sketch relations</a></li>
-    <li><a href="#examples-of-sketch-relations">Examples of sketch relations</a></li>
+    <li><a href="#video-content-of-course-chapter">Video content of course chapter</a></li>
   </ul>
 </nav>
 
@@ -569,59 +560,16 @@
       <article class="article">
 
         <div class="docs-article-container">
-          <h1>Sketch relations</h1>
+          <h1>Video lecture</h1>
 
           <div class="article-style">
-            <h2 id="status-of-the-sketch">Status of the sketch</h2>
-<p>Sketches can be in one of five definition states at any time. The status of a sketch depends on geometric relations between geometry and the dimensions that define it. The three most common states are:</p>
-<ul>
-<li><strong>Under defined:</strong> There is inadequate definition of the sketch, but the sketch can still be used to create features. This is acceptable as most of the time during the initial stages of design, there is not enough information to fully define the sketch. Under defined geometry is <span class="markup-quote">blue</span>.</li>
-<li><strong>Fully defined:</strong> The sketch has complete information. Fully defined geometry is <span class="markup-quote">black</span>. A general rule is that when a part is released for manufacturing, the sketches within it should be fully defined.</li>
-<li><strong>Over defined:</strong> The sketch has duplicate dimensions or conflicting relations and it should not be used until repaired. Extra dimensions and relations should be deleted. Over defined geometry is <span class="markup-quote">red</span>.</li>
-</ul>
-<h2 id="check-under-defined-sketch-geometry">Check under defined sketch geometry</h2>
-<h3 id="check-sketch-status">Check sketch status</h3>
-<p>A sketch is <span class="markup-quote">Under defined</span> because some of the geometry is blue. Note that endpoints of a line can be a different color and different state than the line itself.</p>
-<p>For example, a vertical line from the origin is black because it is:</p>
-<ul>
-<li>Vertical</li>
-<li>Attached to the origin</li>
-</ul>
-<p>However, the uppermost endpoint is blue because the length of the line is under defined.</p>
-<h3 id="dragging">Dragging</h3>
-<p>Under defined geometry can be dragged to new locations or its size changed. Fully defined geometry cannot. You can determine how the geometry is under defined by dragging the blue parts of the geometry. The lines will either move or increase/decrease in length. This will give you an indication that you need to define the length of the line or need to define the location of the line.</p>
-<img src="/courses/SolidWorks/1-Sketch-relations_files/SolidWorks-design-intent2.PNG" alt="Design intent" width="80%"/>
-<h2 id="design-intent">Design intent</h2>
-<p>The design intent governs how the part is built and how it will change. In a sketch, design intent is controlled by a combination of two things:</p>
-<ul>
-<li><strong>Sketch relations:</strong> Create geometric relationships such as parallel, collinear, perpendicular, or coincident between sketch elements.</li>
-<li><strong>Dimensions:</strong> Dimensions are used to define the size and location of the sketch geometry. Linear, radial, diameter and angular dimensions can be added.</li>
-</ul>
-<p>To fully define a sketch <em>and</em> capture the desired design intent requires understanding and applying a combination of relations and dimensions.</p>
-<h2 id="sketch-relations">Sketch relations</h2>
-<p>Sketch relations are used to force a behaviour on a sketch element thereby capturing design intent. Some relations are added automatically when you create the initial sketch and others can be added later manually.</p>
-<p>You can check the existing relations by either:</p>
-<ul>
-<li>Symbols appear next to the geometry to indicate what relations are associate with that entity. In the picture below, the arc has three relations: two tangent and one equal.</li>
-<li>Select the skech entity and the Property Manager show the relations associated with that entity.</li>
-</ul>
-<blockquote>
-<p>You can delete a relation by either clicking the relation icon and pressing the <span class="markup-quote">Delete</span> button. You can also right click on the relation icon and selecting the delete option.</p>
-</blockquote>
-<h2 id="examples-of-sketch-relations">Examples of sketch relations</h2>
-<p>There are many different sketch relations. Which ones are valid depends on the combination of geometry that you select.
-The following are sketch relations:</p>
-<ul>
-<li>Coincident</li>
-<li>Merge</li>
-<li>Parallel</li>
-<li>Perpendicular</li>
-<li>Collinear</li>
-<li>Horizontal</li>
-<li>Vertical</li>
-<li>Equal</li>
-<li>Midpoint</li>
-</ul>
+            <h2 id="video-content-of-course-chapter">Video content of course chapter</h2>
+<p>This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/HEkmlnIKyqo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 
           </div>
 
@@ -638,14 +586,14 @@ The following are sketch relations:</p>
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/courses/solidworks/1-creata-a-part/" rel="next">Creating a part in SolidWorks</a>
+    <a href="/courses/solidworks/9-cswa-preparation/" rel="next">Certified SolidWorks Associate exam preparation</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/courses/solidworks/1-dimensions/" rel="prev">Dimensions</a>
+    <a href="/courses/solidworks/1-learning-outcomes/" rel="prev">Learning outcomes</a>
   </div>
   
 </div>
@@ -655,7 +603,7 @@ The following are sketch relations:</p>
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Feb 17, 2020</p>
+          <p>Last updated on Feb 27, 2020</p>
 
           
 
@@ -667,7 +615,7 @@ The following are sketch relations:</p>
   
 
 <p class="edit-page">
-  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5cSolidWorks%5c1-Sketch-relations.md">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5cSolidWorks%5c1-Videos.md">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>

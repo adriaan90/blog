@@ -8,7 +8,7 @@ draft: false
 menu:
   SolidWorks:
     parent: Introduction to Sketching
-    weight: 2
+    weight: 3
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 2

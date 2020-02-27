@@ -39,5 +39,6 @@ The topics covered are:
 * Shelling and Ribs
 * Using assemblies
 * Part and assembly drawings
+* Preparing for CSWA exam
 
 If only certain topics is of interest to you, you can skip to certain topics by using the content tree.
