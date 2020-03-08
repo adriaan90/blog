@@ -7,11 +7,11 @@ date: "2020-02-17"
 draft: false
 menu:
   SolidWorks:
-    parent: Introduction to Sketching
-    weight: 4
+    parent: 1. Introduction to Sketching
+    weight: 104
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 3
+weight: 4
 ---
 
 ## Status of the sketch
