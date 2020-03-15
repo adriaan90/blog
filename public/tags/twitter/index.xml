@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter | Adriaan&#39;s blog</title>
+    <link>/tags/twitter/</link>
+      <atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    <description>Twitter</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 12 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Twitter</title>
+      <link>/tags/twitter/</link>
+    </image>
+    
+    <item>
+      <title>Create a Twitter bot</title>
+      <link>/project/twitter-bot-project/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/twitter-bot-project/</guid>
+      <description>&lt;p&gt;As part of my aim to learn Python, I decided to teach myself by completing a bunch of projects created in Python, and a Twitter bot is my first project!&lt;/p&gt;
+&lt;p&gt;The purpose of this article is two-fold:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Helping you to create a Twitter bot of your own.&lt;/li&gt;
+&lt;li&gt;Record the process for when I return to this project in the future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Right! Let&amp;rsquo;s get started!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;some-background-watching&#34;&gt;Some background watching&lt;/h2&gt;
+&lt;p&gt;I came across a video by CS Dojo 
+&lt;a href=&#34;https://www.youtube.com/watch?v=W0wWwglE1Vc&amp;amp;t&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How To Create A Twitter Bot With Python&lt;/a&gt;. Do check it out!&lt;/p&gt;
+&lt;h2 id=&#34;getting-started-with-twitter-api&#34;&gt;Getting started with Twitter API&lt;/h2&gt;
+&lt;p&gt;The first thing you need to do is create an account at 
+&lt;a href=&#34;https://developer.twitter.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter Developer&lt;/a&gt;. Make sure you are logged into the Twitter account that you want to use to create the Twitter bot. Create your account and add an app that will generate your authorisation keys that you need to connect to the Twitter API.
+These keys will be used in the Python script to connect to the API.&lt;/p&gt;
+&lt;h2 id=&#34;connect-to-the-twitter-api-with-python&#34;&gt;Connect to the Twitter API with Python&lt;/h2&gt;
+&lt;p&gt;The first thing you need to do is to install &lt;code&gt;tweepy&lt;/code&gt; which is the Python library that you will use to connect to the Twitter API. You can install is using the command prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install tweepy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once that is done, you can get started with setting up your &lt;code&gt;twitter_bot.py&lt;/code&gt; script.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import tweepy
+
+CONSUMER_KEY = &#39;YOUR_CONSUMER_KEY&#39;
+CONSUMER_SECRET = &#39;YOUR_CONSUMER_SECRET_KEY&#39;
+ACCESS_KEY = &#39;YOUR_ACCESS_KEY&#39;
+ACCESS_SECRET = &#39;YOUR_ACCESS_SECRET_KEY&#39;
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+api = tweepy.API(auth, wait_on_rate_limit=True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can copy the four key values from your created app in your Twitter Developer account.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you plan to commit your code to an online repository, do not add your access keys to your code directly, as others will be able to see it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The last three lines of the code sets up the API so that you can use it for all kinds of &lt;em&gt;cool&lt;/em&gt; stuff. Make sure you go have a look at the 
+&lt;a href=&#34;http://docs.tweepy.org/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tweepy documentation&lt;/a&gt; to find out what the &lt;code&gt;tweepy&lt;/code&gt; library can do.&lt;/p&gt;
+&lt;h2 id=&#34;fav-and-retweet&#34;&gt;Fav and retweet!&lt;/h2&gt;
+&lt;p&gt;For this project, I want to create a bot that will &lt;em&gt;favourite&lt;/em&gt; a tweet and &lt;em&gt;retweet&lt;/em&gt; it when your twitter account is mentioned.&lt;/p&gt;
+&lt;h3 id=&#34;scan-for-any-tweets-mentioning-the-account&#34;&gt;Scan for any tweets mentioning the account&lt;/h3&gt;
+&lt;p&gt;First we need to collect all the tweets that mention the account. &lt;code&gt;Tweepy&lt;/code&gt; enables you to collect the 20 latest tweets mentioning your account.&lt;/p&gt;
+&lt;p&gt;It is necessary to specify the last tweet ID that you interacted with to ensure that you don&amp;rsquo;t retweet &lt;em&gt;or&lt;/em&gt; favourite any tweet you already have.&lt;/p&gt;
+&lt;p&gt;We can store the ID of the last tweet that we enteracted with in a .txt file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def retrieve_last_seen_id(file_name):
+  f_read = open(file_name, &#39;r&#39;)
+  last_seen_id = int(f_read.read().strip())
+  f_read.close()
+  return last_seen_id
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function opens up the textfile and reads the tweet ID and returns it as an integer in the variable &lt;code&gt;last_seen_id&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next we retrieve all the tweets mentioning your twitter account after the last tweet ID specified in your textfile.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mentions = api.mentions_timeline(last_seen_id, tweet_mode = &#39;extended&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We loop through all the tweet IDs in the &lt;code&gt;mentions&lt;/code&gt; variable. The loop starts at the end of the list, which will be the oldest tweet that we haven&amp;rsquo;t interact with yet.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for mention in reversed(mentions):
+    if not mention:
+        return
+    last_fav_tweet = mention.id
+    store_last_seen_id(last_fav_tweet,FILE_NAME_FAV)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The tweet ID of the last interacted tweet is updated in the text file, using the function:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def store_last_seen_id(last_seen_id,file_name):
+  f_write = open(file_name, &#39;w&#39;)
+  f_write.write(str(last_seen_id))
+  f_write.close()
+  return
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The tweet ID stored in the &lt;code&gt;mention.id&lt;/code&gt; is then &lt;em&gt;favourited&lt;/em&gt; and &lt;em&gt;retweeted&lt;/em&gt; with the commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;api.create_favorite(mention.id)
+api.retweet(mention.id)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;deploying-the-bot&#34;&gt;Deploying the bot&lt;/h2&gt;
+&lt;p&gt;Now that you have set up the bot it needs to run continuously to check for tweets mentioning your account. This can be done by putting the function in an infinite loop:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while True:
+  fav_tweets()
+  time.sleep(15)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The code &lt;code&gt;time.sleep()&lt;/code&gt; pauses the &lt;code&gt;while&lt;/code&gt; loop for a period specified here as 15 seconds. Make sure to add&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import time
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to your script to enable this functionality.&lt;/p&gt;
+&lt;h3 id=&#34;using-heroku&#34;&gt;Using Heroku&lt;/h3&gt;
+&lt;p&gt;The problem with running the bot locally on your computer is that your command prompt window will be occupied running the bot, so you won&amp;rsquo;t be able to use it.&lt;/p&gt;
+&lt;p&gt;The best solution is to deploy it on a server, and 
+&lt;a href=&#34;https://www.heroku.com/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Heroku&lt;/a&gt; is a free service for just that purpose!
+The best place to start is to follow Heroku&amp;rsquo;s 
+&lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;step-by-step guide for deploying using Python&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You will need to sign up for an account and then install the &lt;em&gt;Heroku CLI&lt;/em&gt; to your computer. You can either link your Heroku account to your Github repository where your bot has been uploaded, or you can upload it to a &lt;em&gt;Heroku repository&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We will use the &lt;em&gt;Heroku repository&lt;/em&gt;. Once you have installed the &lt;em&gt;Heroku CLI&lt;/em&gt; to your computer, login using the command prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;$ heroku login
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;create-a-heroku-app&#34;&gt;Create a Heroku app&lt;/h3&gt;
+&lt;p&gt;The next step is to initiate a git repository on your local machine using:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;$ git init
+$ cd the-name-of-your-bot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also clone the &lt;code&gt;getting-started-with-python&lt;/code&gt; repository that Heroku provides. It has all the additional documents already created that you need. All you need to do is copy those files over to your project&amp;rsquo;s folder.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After a git repository has been initialised, you need to commit all your changes and then create an app on Heroku, which prepares Heroku to receive your source code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;$ git add .
+$ git commit -m &amp;quot;initial commit&amp;quot;
+
+$ heroku create
+
+$ git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;last-few-things&#34;&gt;Last few things&lt;/h3&gt;
+&lt;p&gt;So the last problem is that you need to get your API authorisation keys to the Heroku repository without making it public knowledge.&lt;/p&gt;
+&lt;p&gt;Before you push your repository to Heroku, make the following changes to your code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import os
+from os import environ
+
+CONSUMER_KEY = environ[&#39;YOUR_CONSUMER_KEY&#39;]
+CONSUMER_SECRET = environ[&#39;YOUR_CONSUMER_SECRET&#39;]
+ACCESS_KEY = environ[&#39;YOUR_ACCESS_KEY&#39;]
+ACCESS_SECRET = environ[&#39;YOUR_ACCESS_SECRET&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above code makes sure that you do not need to commit your Twitter API keys. After you have edited your code, you need to add your API keys to your Heroku account by going to your Heroku app, going to settings and editing the &lt;em&gt;Config Vars&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Also, there are a few more files that you need to upload to Heroku before it will be functional. This include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Procfile&lt;/li&gt;
+&lt;li&gt;Requirements.txt&lt;/li&gt;
+&lt;li&gt;Runtime.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is only necessary if you haven&amp;rsquo;t already copied them over from the repository &lt;code&gt;getting-started-with-python&lt;/code&gt; that you cloned.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;procfile&#34;&gt;Procfile&lt;/h3&gt;
+&lt;p&gt;Heroku apps include a Procfile that specifies the commands that are executed by the app on startup. You need to use a Procfile to declare that this is a worker:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;worker: python your_bot_name.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;requirementstxt&#34;&gt;Requirements.txt&lt;/h3&gt;
+&lt;p&gt;The requirements file lists the versions of all the programs that your bot will use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;certifi==2019.11.28
+chardet==3.0.4
+idna==2.9
+oauthlib==3.1.0
+PySocks==1.7.1
+requests==2.23.0
+requests-oauthlib==1.3.0
+six==1.14.0
+tweepy==3.6.0
+urllib3==1.25.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;runtime-file&#34;&gt;Runtime file&lt;/h3&gt;
+&lt;p&gt;This file specifies the version of Python that Heroku needs to use. At the time of writing this, Tweepy does not support Python 3.7, so you need to specify an older version.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python-3.6.9
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,151 @@
+# Basic part modelling
+
+This lesson discusses the considertaions that you make before creating a part, and shows the process of creating a simple one.
+
+## Learning outcomes
+
+Upon the successful completion of this lesson, you will be able to:
+
+- Choose the best profile for sketching.
+- Choose the proper sketch plane.
+- Extrude a sketch as a cut.
+- Create hole wizard holes.
+- Insert fillets on a solid.
+- Edit sketches, edit features and use rollback.
+
+## Choosing the sketch plane
+Once the best profile is determined, the next step is to decide which view to use and select the plane with the same name for sketching it. The SolidWorks software provides three planes:
+
+- Front plane
+- Top plane
+- Right plane
+
+Each plane passes through the **origin** and is mutually perpendicular to the others. Although the planes are infinite, it may be easier to think of them as forming an open box, connecting at the origin. Using this analogy, the inner faces of the box are the potential sketch planes.
+
+There are several things to consider when choosing the sketch plane. 
+
+- Appearance
+- Orientation in an assembly
+
+The appearance dictates how the part will be oriented in standard views such as the *Isometric* view. This also determines how you will spend most of your time looking at the model as you create it. 
+The part's orientation in an assembly dictates how it is to be positioned with respect to other, mating parts.
+
+Another consideration is how you want the model to appear on the drawing when you detail it. You should build the model so that the *Front view* is the same as the *Front view* you want in the final drawing.
+
+## Sketching the first feature
+The modelling process of any part includes sketching and creating bosses, cuts and fillets. To get started, create a new file and select the plane you want to sketch on first.
+Create the first feature by extruding a sketch into a boss.
+
+>The first feature is always a boss and it is the first solid feaure created in any part.
+
+Use a **Corner Rectangle** to create a rectangle in a sketch. There are other rectangle/parallelogram tools available:
+
+- Center rectangle
+- 3 point center rectangle
+- 3 point corner rectangle
+- Parallelogram
+
+>You can rename features by selecting it and pressing **F2**. Always try and rename it to something meaningful.
+
+Add dimensions to the sketch so that it is fully-defined and extrude the sketch.
+
+**Add picture of first sketch**
+
+## Create second feature
+The next feature will be the boss with a cuved top. The sketch plane for this feature is not an existing plane, but the top planar face of the model. The required sketch geometry is shown overlaid on the finished model.
+
+Any planar flat face of the model can be used as a sketch plane. Simply select the face and choose the **Sketch** tool.
+
+**Add picture of first sketch**
+
+## Cut feature
+Once the two main boss features are completed, it is time to create a cut to represent the removal of material. Cut features are created in the same way as bosses - in this case with a sketch and extrusion.
+
+>Cut features are created in the same way as bosses - with a sketch and extrusion, but cutting material away rather than adding it.
+
+**Insert cut extrude picture**
+
+## Hole wizard
+The hole wizard is used to create specialised holes in a solid. It can create simple, tapered, counterbored and countersunk holes using a step by step procedure.
+
+Create a hole on the vertical boss with the following properties:
+
+- **Type:** Counterbore
+- **Standard:** Ansi Metric
+- **Type:** Hex bolt
+- **Size:** M8
+- **End condition:** Through all
+
+**insert picture of hole wizard**
+
+## Fillets
+Filleting refers to both fillets (adding volume) and rounds (removing volume). The distinction is made by the geometric conditions, not the command itself. Fillets are created on selected edges. Those edges can be selected in several ways.
+
+There are some general filleting rules are:
+
+- Leave cosmetic fillets until the end.
+- Create multiple fillets that will have the same radius in the same command.
+- When you need fillets of different radii, generally you should make the larger fillets first.
+- Fillet order is important. Fillets create faces and edges that can be be used to generate more fillets.
+
+### Insert fillets
+Select the **Fillet** option and select the radius value to **8mm**.
+
+**Insert preview with fillets**
+
+> You can also select edges using a window. Drag a window surrounding one or more edges. 
+
+Add another fillet, radius of **3mm** using **Full preview**. Select indicated edges as shown in the picture.
+
+**insert preview picture**
+
+## Editing tools
+Three of the most useful eediting tools are:
+
+- Edit sketch
+- Edit feature
+- Rollback
+
+### Edit sketch
+Once created, sketches can be changed using **Edit Sketch**. This opens the selected sketch so that you can change anything:
+
+- Change the dimension values of the sketch
+- Add/Remove dimensions
+- Add/Remove geometry
+- Add/Remove geometric relations
+
+Edit the sketch and align the slot to the vertical sides of the second boss extrude (**Vertical boss**).
+
+**insert editing sketch picture**
+
+> Remember to look at the confirmation corner to see if you are in the sketch environment. An exit sketch icon will show if you are in the sketch environment.
+
+### Edit feature
+The **edit feature** changes how a feature is applied to the model. Each feature has specific information that can be changed or added to, depending on the type of feature it is.
+
+Edit the last fillet feature and add the edges on top of the first boss feature:
+
+**add edit feature fillet**
+
+### Rollback
+The **Rollback** bar is the blue horizontal bar located at the bottom of the *FeatureManager* design tree.
+The Rollback bar can be used as a *walk-through* showing the steps that were followed to build it or to add features at a specific point in the part's history. 
+
+Use the rollback bar to insert holes on the first boss extrude feature with the following properties:
+
+- **Type:** Hole
+- **Standard:** Ansi Metric
+- **Type:** Drill sizes
+- **Size:** 7.0
+- **End condition:** Through all
+
+**Insert new hole pic**
+
+## Changing appearance
+Use *Appearance* to change the color and optical properties of the part's graphics. 
+
+Change the color of the part to look like the one below:
+
+**Insert picture**
+
+

@@ -1,0 +1,8 @@
+# CSWA Certified SolidWorks Associate
+The Certified SolidWorks Associate (CSWA) online test is an excellent way to test your knowledge in the use of SolidWorks as well as get recognition in the form of a certificate if you pass it. It is highly recommended for people who want to have tangible proof of their SolidWorks competency, be that for their CV or as part of their professional development.
+
+Below are two video tutorialson how to prepare for the exam and what you can do beforehand to help you save some time as well as eliminate any unforseen errors.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CqKerHliB_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-h7sP8FKKqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

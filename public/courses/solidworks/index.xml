@@ -221,28 +221,6 @@ The following are sketch relations:&lt;/p&gt;
     </item>
     
     <item>
-      <title>Extrude</title>
-      <link>/courses/solidworks/1-extrude/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-extrude/</guid>
-      <description>&lt;h2 id=&#34;extrude-the-geometry&#34;&gt;Extrude the geometry&lt;/h2&gt;
-&lt;p&gt;Once the sketch is completed, it can be extruded to create the first feature of the part. There are many options for extruding a sketch including the start and end conditions, draft and depth of extrusion, which will be discussed in more detail in later lessons.
-Typically, extrusions take place in the direction normal to the sketch plane.&lt;/p&gt;
-&lt;h3 id=&#34;how-to-select-the-extrude-feature&#34;&gt;How to select the extrude feature&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;From the menu: &lt;strong&gt;Insert, Boss/Base, Extrude&amp;hellip;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;On the Features toolbar, choose &lt;strong&gt;Boss/Base&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;extrusion-options&#34;&gt;Extrusion options&lt;/h3&gt;
-&lt;p&gt;As soon as you select the Extrude feature, the view of the geometry will change to trimetric and a preview of the extrusion will show with the default depth.
-Handles (purple arrows) appear that can be used to drag the preview to the desired depth. The handles are colored for the active direction and gray for inactive direction. A &lt;strong&gt;Ruler&lt;/strong&gt; will appear when you use the handle to edit the depth of the extrusion.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Extrude_files/SolidWorks-extrude-sketch-with-ruler.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Different extrusion settings are available for you to choose from to determine the depth of your extrusion.&lt;/p&gt;
-&lt;p&gt;Once the feature is completed, the sketch will be absorbed into the &lt;span class=&#34;markup-quote&#34;&gt;Extrude1&lt;/span&gt; feature.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Dimensions</title>
       <link>/courses/solidworks/1-dimensions/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
@@ -273,6 +251,28 @@ Depending on where you place the angular dimension, you can get the interior or 
     </item>
     
     <item>
+      <title>Extrude</title>
+      <link>/courses/solidworks/1-extrude/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/1-extrude/</guid>
+      <description>&lt;h2 id=&#34;extrude-the-geometry&#34;&gt;Extrude the geometry&lt;/h2&gt;
+&lt;p&gt;Once the sketch is completed, it can be extruded to create the first feature of the part. There are many options for extruding a sketch including the start and end conditions, draft and depth of extrusion, which will be discussed in more detail in later lessons.
+Typically, extrusions take place in the direction normal to the sketch plane.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-select-the-extrude-feature&#34;&gt;How to select the extrude feature&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;From the menu: &lt;strong&gt;Insert, Boss/Base, Extrude&amp;hellip;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On the Features toolbar, choose &lt;strong&gt;Boss/Base&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;extrusion-options&#34;&gt;Extrusion options&lt;/h3&gt;
+&lt;p&gt;As soon as you select the Extrude feature, the view of the geometry will change to trimetric and a preview of the extrusion will show with the default depth.
+Handles (purple arrows) appear that can be used to drag the preview to the desired depth. The handles are colored for the active direction and gray for inactive direction. A &lt;strong&gt;Ruler&lt;/strong&gt; will appear when you use the handle to edit the depth of the extrusion.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Extrude_files/SolidWorks-extrude-sketch-with-ruler.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Different extrusion settings are available for you to choose from to determine the depth of your extrusion.&lt;/p&gt;
+&lt;p&gt;Once the feature is completed, the sketch will be absorbed into the &lt;span class=&#34;markup-quote&#34;&gt;Extrude1&lt;/span&gt; feature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sketch Guidelines</title>
       <link>/courses/solidworks/1-sketch-guidelines/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
@@ -289,6 +289,42 @@ Depending on where you place the angular dimension, you can get the interior or 
 &lt;li&gt;Be flexible. It may be necessary to change the order in which you are adding dimensions or relations.&lt;/li&gt;
 &lt;li&gt;Fix errors as they occur.&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>/courses/solidworks/2-learning-outcomes/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/2-learning-outcomes/</guid>
+      <description>&lt;p&gt;This lesson discusses the considertaions that you make before creating a part, and shows the process of creating a simple one.&lt;/p&gt;
+&lt;h2 id=&#34;learning-outcomes&#34;&gt;Learning outcomes&lt;/h2&gt;
+&lt;p&gt;Upon the successful completion of this lesson, you will be able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose the best profile for sketching.&lt;/li&gt;
+&lt;li&gt;Choose the proper sketch plane.&lt;/li&gt;
+&lt;li&gt;Extrude a sketch as a cut.&lt;/li&gt;
+&lt;li&gt;Create hole wizard holes.&lt;/li&gt;
+&lt;li&gt;Insert fillets on a solid.&lt;/li&gt;
+&lt;li&gt;Edit sketches, edit features and use rollback.&lt;/li&gt;
+&lt;li&gt;Make a basic drawing of a part.&lt;/li&gt;
+&lt;li&gt;Demonstrate the associativity between the model and its drawing.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Video lecture</title>
+      <link>/courses/solidworks/2-videos/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/solidworks/2-videos/</guid>
+      <description>&lt;h2 id=&#34;video-content-of-course-chapter&#34;&gt;Video content of course chapter&lt;/h2&gt;
+&lt;p&gt;This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Sv_mp9mwX0k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     

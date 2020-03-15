@@ -8,10 +8,10 @@ draft: false
 menu:
   SolidWorks:
     parent: 1. Introduction to Sketching
-    weight: 6
+    weight: 106
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 5
+weight: 6
 ---
 
 ## Extrude the geometry

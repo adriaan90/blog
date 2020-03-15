@@ -1,0 +1,15 @@
+--- 
+title: "SolidWorks Essentials"
+author: "Adriaan van Niekerk"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "The goal of this course is to teach you how to use SolidWorks CAD software to build models of parts and assemblies and how to make simple drawings of those parts and assemblies."
+---
+
+# Prerequisites
+
+This is an instructional guide for SolidWorks that needs to be used alongside the software. You will get the most value out of this book by practising what you have learnt in each Chapter in SolidWorks. 
