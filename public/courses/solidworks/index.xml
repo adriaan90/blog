@@ -314,21 +314,6 @@ Handles (purple arrows) appear that can be used to drag the preview to the desir
     </item>
     
     <item>
-      <title>Video lecture</title>
-      <link>/courses/solidworks/2-videos/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/2-videos/</guid>
-      <description>&lt;h2 id=&#34;video-content-of-course-chapter&#34;&gt;Video content of course chapter&lt;/h2&gt;
-&lt;p&gt;This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Sv_mp9mwX0k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
       <title>Certified SolidWorks Associate exam preparation</title>
       <link>/courses/solidworks/9-cswa-preparation/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>

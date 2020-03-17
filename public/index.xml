@@ -314,21 +314,6 @@ Handles (purple arrows) appear that can be used to drag the preview to the desir
     </item>
     
     <item>
-      <title>Video lecture</title>
-      <link>/courses/solidworks/2-videos/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/2-videos/</guid>
-      <description>&lt;h2 id=&#34;video-content-of-course-chapter&#34;&gt;Video content of course chapter&lt;/h2&gt;
-&lt;p&gt;This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Sv_mp9mwX0k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
       <title>Certified SolidWorks Associate exam preparation</title>
       <link>/courses/solidworks/9-cswa-preparation/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
@@ -384,7 +369,10 @@ Handles (purple arrows) appear that can be used to drag the preview to the desir
 &lt;p&gt;&lt;strong&gt;Right! Let&amp;rsquo;s get started!&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;some-background-watching&#34;&gt;Some background watching&lt;/h2&gt;
 &lt;p&gt;I came across a video by CS Dojo 
-&lt;a href=&#34;https://www.youtube.com/watch?v=W0wWwglE1Vc&amp;amp;t&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How To Create A Twitter Bot With Python&lt;/a&gt;. Do check it out!&lt;/p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=W0wWwglE1Vc&amp;amp;t&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How To Create A Twitter Bot With Python&lt;/a&gt;. Do check it out!
+I also created a video showing the process for those that rather prefer watching how it is done vs. reading about it.&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/28K8uy8SP6s&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div style=&#34;text-align: left;&#34;&gt;
 &lt;h2 id=&#34;getting-started-with-twitter-api&#34;&gt;Getting started with Twitter API&lt;/h2&gt;
 &lt;p&gt;The first thing you need to do is create an account at 
 &lt;a href=&#34;https://developer.twitter.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter Developer&lt;/a&gt;. Make sure you are logged into the Twitter account that you want to use to create the Twitter bot. Create your account and add an app that will generate your authorisation keys that you need to connect to the Twitter API.

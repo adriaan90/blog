@@ -32,6 +32,10 @@ The purpose of this article is two-fold:
 ## Some background watching
 
 I came across a video by CS Dojo [How To Create A Twitter Bot With Python](https://www.youtube.com/watch?v=W0wWwglE1Vc&t). Do check it out!
+I also created a video showing the process for those that rather prefer watching how it is done vs. reading about it.
+
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/28K8uy8SP6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: left;">
 
 ## Getting started with Twitter API
 The first thing you need to do is create an account at [Twitter Developer](https://developer.twitter.com/). Make sure you are logged into the Twitter account that you want to use to create the Twitter bot. Create your account and add an app that will generate your authorisation keys that you need to connect to the Twitter API.
