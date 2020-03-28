@@ -13,327 +13,6 @@
     </image>
     
     <item>
-      <title>Learning outcomes</title>
-      <link>/courses/solidworks/1-learning-outcomes/</link>
-      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-learning-outcomes/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This lesson introduces 2D sketching, the bais of modeling in SolidWorks.
-Sketches are used for all sketched features in SolidWorks including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Extrusions&lt;/li&gt;
-&lt;li&gt;Revolves&lt;/li&gt;
-&lt;li&gt;Sweeps&lt;/li&gt;
-&lt;li&gt;Lofts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In this lesson, only extruded features will be covered. The others will be covered in detail in later lessons.&lt;/p&gt;
-&lt;h2 id=&#34;learning-outcomes&#34;&gt;Learning outcomes&lt;/h2&gt;
-&lt;p&gt;Upon the successful completion of this lesson, you will be able to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a part.&lt;/li&gt;
-&lt;li&gt;Insert a new sketch.&lt;/li&gt;
-&lt;li&gt;Add sketch geometry&lt;/li&gt;
-&lt;li&gt;Establish sketch relations between pieces of geometry.&lt;/li&gt;
-&lt;li&gt;Understand the state of the sketch.&lt;/li&gt;
-&lt;li&gt;Extrude the sketch into a solid.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Video lecture</title>
-      <link>/courses/solidworks/1-videos/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-videos/</guid>
-      <description>&lt;h2 id=&#34;video-content-of-course-chapter&#34;&gt;Video content of course chapter&lt;/h2&gt;
-&lt;p&gt;This course content is also available in video format! Everything that is covered in this Chapter of the course is also discussed in the video below.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/HEkmlnIKyqo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Creating a part in SolidWorks</title>
-      <link>/courses/solidworks/1-creata-a-part/</link>
-      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-creata-a-part/</guid>
-      <description>&lt;h2 id=&#34;stages-in-the-sketch-process&#34;&gt;Stages in the sketch process&lt;/h2&gt;
-&lt;p&gt;Every sketch has several characteristics that contribute to its shape, size and orientation. You will always follow the same workflow when creating any part:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create part.&lt;/li&gt;
-&lt;li&gt;Sketch geometry.&lt;/li&gt;
-&lt;li&gt;Add relations.&lt;/li&gt;
-&lt;li&gt;Extrude sketch.&lt;/li&gt;
-&lt;li&gt;Repeat&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;create-a-part&#34;&gt;Create a part&lt;/h2&gt;
-&lt;p&gt;When you first open up SolidWorks, a window will appear prompting you to create a new SolidWorks document. This can either be a part, assembly or drawing. If this window does not appear, you can create a new part by selecting: &lt;span class=&#34;markup-quote&#34;&gt;File, New&lt;/span&gt; from the main menu.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-New-file.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Always remember to save your part files frequently. Try and save it as soon as you have created a new document.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;what-is-sketching-in-solidworks&#34;&gt;What is sketching in SolidWorks?&lt;/h2&gt;
-&lt;p&gt;Sketching is the act of creating a 2D profile comprised of a wireframe geometry. Typical geometry include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lines&lt;/li&gt;
-&lt;li&gt;Arcs&lt;/li&gt;
-&lt;li&gt;Circles&lt;/li&gt;
-&lt;li&gt;Ellipses&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;creating-a-sketch&#34;&gt;Creating a sketch&lt;/h2&gt;
-&lt;p&gt;To create a sketch, you must choose a plane on which to sketch. The system provides three initial planes by default. They are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Front plane&lt;/li&gt;
-&lt;li&gt;Top plane&lt;/li&gt;
-&lt;li&gt;Right plane&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It is important to choose the correct plane to start your sketch on as this choice can influence how your drawing of the part is going to be layed out.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-default-planes.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When creating a new sketch, &lt;span class=&#34;markup-quote&#34;&gt;Insert Sketch&lt;/span&gt; opens up the sketcher on the selected plane. If you have not selected a plane when you insert a sketch, SolidWorks will ask you to select the plane on which you want to sketch on.&lt;/p&gt;
-&lt;h2 id=&#34;active-sketch-environment&#34;&gt;Active sketch environment&lt;/h2&gt;
-&lt;p&gt;When you have selected a plane to sketch on, the selected plane will rotate so it is parallel to the screen. &lt;strong&gt;This only happens for the first sketch of the part.&lt;/strong&gt; You will see two red arrows originating from the same point, one pointing upwards and the other points right. It represents the &lt;strong&gt;sketch origin&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;confirmation-corner&#34;&gt;Confirmation corner&lt;/h2&gt;
-&lt;p&gt;When any SolidWorks commands are active, a symbol or a set of symbols appears in the upper right corner of the graphics area. This is called the &lt;strong&gt;confirmation corner.&lt;/strong&gt; When a sketch is opened, the confirmation corner displays two symbols. One looks like the sketch symbol and the other is a red X. These symbols provide a visual reminder that you are active in a sketch.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Clicking the sketch symbol exists the sketch and &lt;em&gt;save any changes&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Clicking the red X exits the sketch and discards any changes.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;When other commands are active, the confirmation corner displays a green check mark and a red X. The check mark executes the current command and the X cancels the command.&lt;/p&gt;
-&lt;h2 id=&#34;sketch-entities&#34;&gt;Sketch entities&lt;/h2&gt;
-&lt;p&gt;SolidWorks offers a vaiety of sketch tools for creating profile geometry. The &lt;strong&gt;line&lt;/strong&gt; tool will be used most of the time. Other sketch entities include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Circle&lt;/li&gt;
-&lt;li&gt;Arcs&lt;/li&gt;
-&lt;li&gt;Ellipse&lt;/li&gt;
-&lt;li&gt;Partial ellipse&lt;/li&gt;
-&lt;li&gt;Parabola&lt;/li&gt;
-&lt;li&gt;Spline&lt;/li&gt;
-&lt;li&gt;Arc slots&lt;/li&gt;
-&lt;li&gt;Polygon&lt;/li&gt;
-&lt;li&gt;Rectangle&lt;/li&gt;
-&lt;li&gt;Point&lt;/li&gt;
-&lt;li&gt;Centerline&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;basic-sketching&#34;&gt;Basic sketching&lt;/h2&gt;
-&lt;p&gt;There are two techniques to sketch a geometry:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Click-Click&lt;/strong&gt;
-Position the cursor where you want the line to start. Click the left mouse button. Move the cursor to where you want the ine to end. A preview of the sketch entity will follow the cursor. Cick the left mouse bitton a second  time.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Click-Drag&lt;/strong&gt;
-Position the cursor where you want the line to start. Press and hold the left mouse button. Drag the cursor to where you want the sketch entity to end. A preview of the sketch entity will follow the the cursor. Release the left mouse button.&lt;/p&gt;
-&lt;h2 id=&#34;sketching-a-line&#34;&gt;Sketching a line&lt;/h2&gt;
-&lt;p&gt;Sketch a line by selecting the line tool. Click on the origin and move your mouse horizontally to the right. A preview of the line will appear. Click again to end the line.&lt;/p&gt;
-&lt;p&gt;Do not be too concerned with making the line the exact length you want it to be at the start when you create the sketch. Your sketch only need to be the approximate size of your final sketch. The dimensioning tool will be used later to make the size exact.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-vertical-line.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Next, starting at the end of the horizontal line, sketch a line at an angle.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-angled-line.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;inference-lines&#34;&gt;Inference lines&lt;/h3&gt;
-&lt;p&gt;Dashed inference lines appear when drawing lines to help you &amp;lsquo;line-up&amp;rsquo; with existing geometry. These lines include existing line vecotrs, normals, horizontals, veritcals, tangents and centers.&lt;/p&gt;
-&lt;p&gt;Note that some lines capture actual geometric relations, while other simply act as a guide or reference when sketching.&lt;/p&gt;
-&lt;p&gt;A difference in the color of the inference lines will distinguish them.&lt;/p&gt;
-&lt;p&gt;In the picture below, the line labeled &amp;ldquo;A&amp;rdquo; are olive-green and if the sketch line snaps to them, will capture either a tangent or perpendicuar relationship.&lt;/p&gt;
-&lt;p&gt;The line labeled &amp;ldquo;B&amp;rdquo; is blue. It only provides a reference, in this case verical, to the other endpoint. If the sketch line is ended at this point, no vertical relation will be captured.&lt;/p&gt;
-&lt;h3 id=&#34;sketch-feedback&#34;&gt;Sketch feedback&lt;/h3&gt;
-&lt;p&gt;The sketcher has many feedback features. The cursor will change to show what tipes of entity is being created. It will also indicate what selections on the existing geometry, such as end, coincident or midpoint, are available using a red dot when the cursor is on it.&lt;/p&gt;
-&lt;p&gt;The most three common feedback symbols are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Endpoints:&lt;/strong&gt; Yellow concentric circles appear at the Endpoint when the cursor is over it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Midpoint:&lt;/strong&gt; The midpoint appears as a square. It changes to red when the cursor is over the line.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Coincident:&lt;/strong&gt; The quadrant points of the circle appear with a concentric circle over the centerpoint.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;closing-the-sketch&#34;&gt;Closing the sketch&lt;/h3&gt;
-&lt;p&gt;Close the sketch with a fina line connected to the starting point of the first line.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Creata-a-part_files/SolidWorks-completed-sketch.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;When you want to turn off a sketching tool, you can either press the &lt;span class=&#34;markup-quote&#34;&gt;Esc&lt;/span&gt; key, click the line tool a second time, or right-click and the graphics area and choose &lt;span class=&#34;markup-quote&#34;&gt;Select&lt;/span&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sketch relations</title>
-      <link>/courses/solidworks/1-sketch-relations/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-sketch-relations/</guid>
-      <description>&lt;h2 id=&#34;status-of-the-sketch&#34;&gt;Status of the sketch&lt;/h2&gt;
-&lt;p&gt;Sketches can be in one of five definition states at any time. The status of a sketch depends on geometric relations between geometry and the dimensions that define it. The three most common states are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Under defined:&lt;/strong&gt; There is inadequate definition of the sketch, but the sketch can still be used to create features. This is acceptable as most of the time during the initial stages of design, there is not enough information to fully define the sketch. Under defined geometry is &lt;span class=&#34;markup-quote&#34;&gt;blue&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fully defined:&lt;/strong&gt; The sketch has complete information. Fully defined geometry is &lt;span class=&#34;markup-quote&#34;&gt;black&lt;/span&gt;. A general rule is that when a part is released for manufacturing, the sketches within it should be fully defined.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Over defined:&lt;/strong&gt; The sketch has duplicate dimensions or conflicting relations and it should not be used until repaired. Extra dimensions and relations should be deleted. Over defined geometry is &lt;span class=&#34;markup-quote&#34;&gt;red&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;check-under-defined-sketch-geometry&#34;&gt;Check under defined sketch geometry&lt;/h2&gt;
-&lt;h3 id=&#34;check-sketch-status&#34;&gt;Check sketch status&lt;/h3&gt;
-&lt;p&gt;A sketch is &lt;span class=&#34;markup-quote&#34;&gt;Under defined&lt;/span&gt; because some of the geometry is blue. Note that endpoints of a line can be a different color and different state than the line itself.&lt;/p&gt;
-&lt;p&gt;For example, a vertical line from the origin is black because it is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Vertical&lt;/li&gt;
-&lt;li&gt;Attached to the origin&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;However, the uppermost endpoint is blue because the length of the line is under defined.&lt;/p&gt;
-&lt;h3 id=&#34;dragging&#34;&gt;Dragging&lt;/h3&gt;
-&lt;p&gt;Under defined geometry can be dragged to new locations or its size changed. Fully defined geometry cannot. You can determine how the geometry is under defined by dragging the blue parts of the geometry. The lines will either move or increase/decrease in length. This will give you an indication that you need to define the length of the line or need to define the location of the line.&lt;/p&gt;
-&lt;img src=&#34;/courses/SolidWorks/1-Sketch-relations_files/SolidWorks-design-intent2.PNG&#34; alt=&#34;Design intent&#34; width=&#34;80%&#34;/&gt;
-&lt;h2 id=&#34;design-intent&#34;&gt;Design intent&lt;/h2&gt;
-&lt;p&gt;The design intent governs how the part is built and how it will change. In a sketch, design intent is controlled by a combination of two things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Sketch relations:&lt;/strong&gt; Create geometric relationships such as parallel, collinear, perpendicular, or coincident between sketch elements.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dimensions:&lt;/strong&gt; Dimensions are used to define the size and location of the sketch geometry. Linear, radial, diameter and angular dimensions can be added.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To fully define a sketch &lt;em&gt;and&lt;/em&gt; capture the desired design intent requires understanding and applying a combination of relations and dimensions.&lt;/p&gt;
-&lt;h2 id=&#34;sketch-relations&#34;&gt;Sketch relations&lt;/h2&gt;
-&lt;p&gt;Sketch relations are used to force a behaviour on a sketch element thereby capturing design intent. Some relations are added automatically when you create the initial sketch and others can be added later manually.&lt;/p&gt;
-&lt;p&gt;You can check the existing relations by either:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Symbols appear next to the geometry to indicate what relations are associate with that entity. In the picture below, the arc has three relations: two tangent and one equal.&lt;/li&gt;
-&lt;li&gt;Select the skech entity and the Property Manager show the relations associated with that entity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can delete a relation by either clicking the relation icon and pressing the &lt;span class=&#34;markup-quote&#34;&gt;Delete&lt;/span&gt; button. You can also right click on the relation icon and selecting the delete option.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;examples-of-sketch-relations&#34;&gt;Examples of sketch relations&lt;/h2&gt;
-&lt;p&gt;There are many different sketch relations. Which ones are valid depends on the combination of geometry that you select.
-The following are sketch relations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Coincident&lt;/li&gt;
-&lt;li&gt;Merge&lt;/li&gt;
-&lt;li&gt;Parallel&lt;/li&gt;
-&lt;li&gt;Perpendicular&lt;/li&gt;
-&lt;li&gt;Collinear&lt;/li&gt;
-&lt;li&gt;Horizontal&lt;/li&gt;
-&lt;li&gt;Vertical&lt;/li&gt;
-&lt;li&gt;Equal&lt;/li&gt;
-&lt;li&gt;Midpoint&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dimensions</title>
-      <link>/courses/solidworks/1-dimensions/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-dimensions/</guid>
-      <description>&lt;h2 id=&#34;smart-dimensions&#34;&gt;Smart dimensions&lt;/h2&gt;
-&lt;p&gt;The &lt;em&gt;Smart Dimension&lt;/em&gt; tool determines the proper type of dimensions based on the geometry chosen. For example, if you pick an arc the system will create a radial dimension. If you pick a circle, you will get a diameter dimension, while selecting two parallel lines will create a linear dimension between them. In cases where the &lt;em&gt;Smart Dimension&lt;/em&gt; tool is not quite smart enough, you have the option of selecting endpoints and moving the dimensions to different measurement positions.&lt;/p&gt;
-&lt;h2 id=&#34;where-to-find-it&#34;&gt;Where to find it&lt;/h2&gt;
-&lt;p&gt;The &lt;em&gt;Smart Dimension&lt;/em&gt; tool can be selected either by:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Selecting &lt;em&gt;Smart Dimension&lt;/em&gt; tool from the &lt;em&gt;Tools&lt;/em&gt; option&lt;/li&gt;
-&lt;li&gt;Right-click on the canvas and select &lt;em&gt;Smart Dimension&lt;/em&gt; from the shortcut menu&lt;/li&gt;
-&lt;li&gt;On the Dimensions/Relations toolbar, pick &lt;em&gt;Smart Dimension&lt;/em&gt; tool&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;creating-and-previewing-a-dimension&#34;&gt;Creating and previewing a dimension&lt;/h2&gt;
-&lt;p&gt;As you select a line in the sketch geometry with the dimension tool, the system creates a preview of the dimension. The preview enables you to ensure that you have captured the correct dimension as well as enable you to see all the different options there are.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Clicking the right mouse button after you have selected the geometry with the dimension tool, locks the orientation of the dimension preview.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can place the dimension anywhere on the canvas by clicking the left mouse button. Once you have placed the dimension, a &lt;em&gt;Modify&lt;/em&gt; tool will appear, displaying the current value of the line you selected. You can enter a new value for the line in the box provided. There is a thumbwheel that will also incrementally increase/decrease the value in the &lt;em&gt;Modify&lt;/em&gt; toolbox.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can change the value of the dimension later as well, by just double-clicking on the dimension which will result in the &lt;em&gt;Modify&lt;/em&gt; tool window appearing.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;angular-dimensions&#34;&gt;Angular dimensions&lt;/h2&gt;
-&lt;p&gt;Angular dimensions can be created using the same dimension tool used for linear, radial and diameter dimensions. Select either two lines that are both non-collinear and non-parallel, or select three non-collinear endpoints.
-Depending on where you place the angular dimension, you can get the interior or exterior angle, the acute angle, or the oblique angle.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Dimensions_files/SolidWorks-fully-defined-sketch.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Extrude</title>
-      <link>/courses/solidworks/1-extrude/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-extrude/</guid>
-      <description>&lt;h2 id=&#34;extrude-the-geometry&#34;&gt;Extrude the geometry&lt;/h2&gt;
-&lt;p&gt;Once the sketch is completed, it can be extruded to create the first feature of the part. There are many options for extruding a sketch including the start and end conditions, draft and depth of extrusion, which will be discussed in more detail in later lessons.
-Typically, extrusions take place in the direction normal to the sketch plane.&lt;/p&gt;
-&lt;h3 id=&#34;how-to-select-the-extrude-feature&#34;&gt;How to select the extrude feature&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;From the menu: &lt;strong&gt;Insert, Boss/Base, Extrude&amp;hellip;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;On the Features toolbar, choose &lt;strong&gt;Boss/Base&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;extrusion-options&#34;&gt;Extrusion options&lt;/h3&gt;
-&lt;p&gt;As soon as you select the Extrude feature, the view of the geometry will change to trimetric and a preview of the extrusion will show with the default depth.
-Handles (purple arrows) appear that can be used to drag the preview to the desired depth. The handles are colored for the active direction and gray for inactive direction. A &lt;strong&gt;Ruler&lt;/strong&gt; will appear when you use the handle to edit the depth of the extrusion.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/courses/SolidWorks/1-Extrude_files/SolidWorks-extrude-sketch-with-ruler.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Different extrusion settings are available for you to choose from to determine the depth of your extrusion.&lt;/p&gt;
-&lt;p&gt;Once the feature is completed, the sketch will be absorbed into the &lt;span class=&#34;markup-quote&#34;&gt;Extrude1&lt;/span&gt; feature.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sketch Guidelines</title>
-      <link>/courses/solidworks/1-sketch-guidelines/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/1-sketch-guidelines/</guid>
-      <description>&lt;p&gt;Here are a few &lt;em&gt;rules of thumb&lt;/em&gt; for sketching in SolidWorks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Keep your sketch simple. Simple sketches are easier to edit, and are less likely to develop errors.&lt;/li&gt;
-&lt;li&gt;Make use of the origin in your first sketch.&lt;/li&gt;
-&lt;li&gt;Create sketch geometry first, add geometric relationships second, and then add your dimensions last. Dimensions can sometimes interfere with the addition of required relations.&lt;/li&gt;
-&lt;li&gt;Use geometric relations wherever possible to maintain design intent.&lt;/li&gt;
-&lt;li&gt;Add or edit dimensions on the closest/smallest geometry first, then work our way to the outer/larger geometry to prevent geometry overlap.&lt;/li&gt;
-&lt;li&gt;Use relations, linked values and equations to reduce the number of independent dimensions needed.&lt;/li&gt;
-&lt;li&gt;Take advantage of symmetry. Use &lt;strong&gt;Mirror&lt;/strong&gt; or &lt;strong&gt;Dynamic Mirror&lt;/strong&gt; sketch tool to mirror sketch elements and add symmetrical relations.&lt;/li&gt;
-&lt;li&gt;Be flexible. It may be necessary to change the order in which you are adding dimensions or relations.&lt;/li&gt;
-&lt;li&gt;Fix errors as they occur.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>/courses/solidworks/2-learning-outcomes/</link>
-      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/2-learning-outcomes/</guid>
-      <description>&lt;p&gt;This lesson discusses the considertaions that you make before creating a part, and shows the process of creating a simple one.&lt;/p&gt;
-&lt;h2 id=&#34;learning-outcomes&#34;&gt;Learning outcomes&lt;/h2&gt;
-&lt;p&gt;Upon the successful completion of this lesson, you will be able to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Choose the best profile for sketching.&lt;/li&gt;
-&lt;li&gt;Choose the proper sketch plane.&lt;/li&gt;
-&lt;li&gt;Extrude a sketch as a cut.&lt;/li&gt;
-&lt;li&gt;Create hole wizard holes.&lt;/li&gt;
-&lt;li&gt;Insert fillets on a solid.&lt;/li&gt;
-&lt;li&gt;Edit sketches, edit features and use rollback.&lt;/li&gt;
-&lt;li&gt;Make a basic drawing of a part.&lt;/li&gt;
-&lt;li&gt;Demonstrate the associativity between the model and its drawing.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Certified SolidWorks Associate exam preparation</title>
-      <link>/courses/solidworks/9-cswa-preparation/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/solidworks/9-cswa-preparation/</guid>
-      <description>&lt;h2 id=&#34;cswa-practise-exam-walkthrough&#34;&gt;CSWA practise exam walkthrough&lt;/h2&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/CqKerHliB_s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;additional-content-and-suggestions&#34;&gt;Additional content and suggestions&lt;/h2&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/-h7sP8FKKqs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
       <title>Example Talk</title>
       <link>/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
@@ -353,6 +32,293 @@ Handles (purple arrows) appear that can be used to drag the preview to the desir
 &lt;/ul&gt;
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Web scraping for daily COVID-19 stats</title>
+      <link>/project/web-scrape-coronavirus/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/web-scrape-coronavirus/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-web-scraping&#34;&gt;What is web scraping?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-data-source&#34;&gt;The data source&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#coding-the-web-scraper&#34;&gt;Coding the web scraper&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#get-the-html-data&#34;&gt;Get the HTML data&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-beautifulsoup&#34;&gt;What is BeautifulSoup&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#installing-beautifulsoup&#34;&gt;Installing BeautifulSoup&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#extracting-the-data&#34;&gt;Extracting the data&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#find-table-id&#34;&gt;Find table ID&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#cleaning-up-the-scraped-data&#34;&gt;Cleaning up the scraped data&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#creating-a-dict-variable&#34;&gt;Creating a &lt;code&gt;dict&lt;/code&gt; variable&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#compiling-the-tweet&#34;&gt;Compiling the tweet&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#growth-factor&#34;&gt;Growth factor&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#getting-stats-for-the-tweet&#34;&gt;Getting stats for the tweet&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#constructing-the-tweet&#34;&gt;Constructing the tweet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As part of my aim to learn Python, I decided to teach myself by completing a bunch of projects created in Python. I started off by creating a 
+&lt;a href=&#34;https://www.adriaansblog.com/project/twitter-bot-project/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter bot&lt;/a&gt;, and now I want to expand it to web scraping daily stats of a website and tweeting about it.
+I am specifically interested in the daily stats of the COVID-19 virus (Coronavirus) and what the daily new cases are as well as the global growth factor. The idea to look at the daily stats of the Coronavirus was sparked after watching a video by 
+&lt;a href=&#34;https://www.youtube.com/watch?v=Kas0tIxDvrg&amp;amp;t&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;3Blue1Brown&lt;/a&gt; where he discusses exponential growth of epidemics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Right! Let&amp;rsquo;s get started!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-web-scraping&#34;&gt;What is web scraping?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Web scraping&lt;/strong&gt;, &lt;strong&gt;web harvesting&lt;/strong&gt;, or &lt;strong&gt;web data extraction&lt;/strong&gt; is used for extracting all kinds of data from websites. Web scraping can be done manually by the user, but web scraping typically includes automated processes implemented using a bot or web crawler. It is a form of copying, in which specific data is gathered and copied from the internet, typically into a database or spreadsheet, for later retrieval or analysis.&lt;/p&gt;
+&lt;h2 id=&#34;the-data-source&#34;&gt;The data source&lt;/h2&gt;
+&lt;p&gt;We are interested in the data contained in a table at 
+&lt;a href=&#34;https://www.worldometers.info/coronavirus/#countries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Worldometer&amp;rsquo;s&lt;/a&gt; website, where it lists all the countries together with their current reported coronavirus cases, new cases for the day, total deaths, new deaths for the day, etc. The idea is to get these daily figures, calculate the global growth factor and create a tweet that can be tweeted daily reporting the stats of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;United Kingdom and&lt;/li&gt;
+&lt;li&gt;South Africa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;coding-the-web-scraper&#34;&gt;Coding the web scraper&lt;/h2&gt;
+&lt;h3 id=&#34;get-the-html-data&#34;&gt;Get the HTML data&lt;/h3&gt;
+&lt;p&gt;First thing you need to do is to get the HTML data of the site you are interested in, into your Python script. We can do this using the Python library, &lt;code&gt;requests&lt;/code&gt;. You can install it using&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install requests
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once it is installed you can import it to your Python script:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import requests
+
+URL = &#39;https://www.worldometers.info/coronavirus/#countries&#39;
+page = requests(get.URL)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The code retrieves the HTML data that the server sends back and stores that data in a Python object.&lt;/p&gt;
+&lt;p&gt;We have scraped some HTML from this webpage, but when you look at it, it just seems like a huge mess. There are tons of HTML elements and thousands of attributes scattered around. We can now parse this lengthy code response with &lt;strong&gt;Beautiful Soup&lt;/strong&gt; to make it more accessible and pick out the data that we are interested in.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-beautifulsoup&#34;&gt;What is BeautifulSoup&lt;/h2&gt;
+&lt;p&gt;Beautiful Soup is a Python library used for pulling data out of HTML and XML files. It  provides ways of navigating, searching, and modifying the parse tree of a website. It can save programmers hours or days of work when gatering data.&lt;/p&gt;
+&lt;h3 id=&#34;installing-beautifulsoup&#34;&gt;Installing BeautifulSoup&lt;/h3&gt;
+&lt;p&gt;If you have not done so already, you need to install &lt;code&gt;BeautifulSoup&lt;/code&gt; which is the Python library that you will use to scrape data from the  webpage. You can install it using the command prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install beautifulsoup4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once that is done, we can start using it in our Python script.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(page.content, &#39;html.parser
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;extracting-the-data&#34;&gt;Extracting the data&lt;/h2&gt;
+&lt;h3 id=&#34;find-table-id&#34;&gt;Find table ID&lt;/h3&gt;
+&lt;p&gt;The Beautiful Soup object has been created in our Python script and the HTML data of the website has been scraped off of the page. Next we need to get the data that we are interested in, out of the HTML code. We first find the &lt;code&gt;id attribute&lt;/code&gt; of the table by using the &lt;strong&gt;inspect&lt;/strong&gt; fuctionality of the Chrome web browser. You right-click anywhere on the webpage and at the bottom of the dropdown list that appears, you select &lt;em&gt;inspect&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The ID of the table is &lt;code&gt;main_table_countries_today&lt;/code&gt;. We can use this to focus only on the table in the scraped HTML code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;results = soup.find(id=&#39;main_table_countries_today&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With a website like this, it is possible that the structure of the website can change in the future, and this can include changing the &lt;code&gt;id attribute&lt;/code&gt; of the table which can cause an error in your code. You will just have to go back to the webpage and update your python code with the new table ID.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;cleaning-up-the-scraped-data&#34;&gt;Cleaning up the scraped data&lt;/h3&gt;
+&lt;p&gt;If we go and print out the data contained in &lt;code&gt;results&lt;/code&gt;, we get:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;
+&amp;lt;tr style=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; font-size:15px; text-align:left;&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;mt_a&amp;quot; href=&amp;quot;country/uk/&amp;quot;&amp;gt;UK&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;14,543&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right;&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right;&amp;quot;&amp;gt;759 &amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right;&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;135&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;text-align:right;font-weight:bold;&amp;quot;&amp;gt;13,649&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;163&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;214&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;11&amp;lt;/td&amp;gt;
+&amp;lt;td style=&amp;quot;text-align:right;font-size:13px;&amp;quot;&amp;gt;
+Jan 30 &amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The data is the entry for the &lt;strong&gt;United Kingdom&lt;/strong&gt;, but there are still a lot of HTML code that we do not want. All the data entries of the table for the given country is wrapped in the HTML element &lt;code&gt;&amp;lt;td ... &amp;lt;\td&amp;gt;&lt;/code&gt;. We can use that knowledge to further clean up the scraped data:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;content = results.find_all(&#39;td&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we print out the data contained in &lt;code&gt;content&lt;/code&gt; we get:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;&amp;lt;td style=&amp;quot;font-weight: bold; font-size:15px; text-align:left;&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;mt_a&amp;quot; href=&amp;quot;country/uk/&amp;quot;&amp;gt;UK&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;14,543&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right;&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right;&amp;quot;&amp;gt;759 &amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right;&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;135&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;text-align:right;font-weight:bold;&amp;quot;&amp;gt;13,649&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;163&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;214&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;font-weight: bold; text-align:right&amp;quot;&amp;gt;11&amp;lt;/td&amp;gt;, &amp;lt;td style=&amp;quot;text-align:right;font-size:13px;&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is still every chaotic. Luckily all the data that we need, it text and can be extracted from the above as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for data in content:
+  print(data.text.strip())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will contain the following data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;UK
+14,543
+
+759
+
+135
+13,649
+163
+214
+11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Each line above is a column entry for the &lt;strong&gt;United Kingdom&lt;/strong&gt;. Next, this data needs to be entered into a dictionary so that we can use it to contruct a tweet.&lt;/p&gt;
+&lt;h3 id=&#34;creating-a-dict-variable&#34;&gt;Creating a &lt;code&gt;dict&lt;/code&gt; variable&lt;/h3&gt;
+&lt;h4 id=&#34;creating-seperate-lists&#34;&gt;Creating seperate lists&lt;/h4&gt;
+&lt;p&gt;Before we can create a tweet reporting on the daily stats, we need to save the scraped data in some form that can be used effectively. For this project, all the data will be safed in a Python dictionary. To achieve this we will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Save each column in a list and&lt;/li&gt;
+&lt;li&gt;Create a dictionary with all the populated lists.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;First, we initialise empty lists for each column:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;countries = []
+total_cases = []
+new_cases = []
+total_deaths = []
+new_deaths = []
+total_recovered = []
+active_cases = []
+critical = []
+total_per_mil_pop = []
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we iterate through the &lt;code&gt;content&lt;/code&gt; variable and place each corresponding entry into the correct list. There are 10 columns and as such a new country&amp;rsquo;s data is shown after every 10 iterations:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i = 1
+for data in content:
+    if i%10 == 1:
+        countries.append(data.text.strip())
+    if i%10 == 2:
+        total_cases.append(data.text.strip())
+    if i%10 == 3:
+        new_cases.append(data.text.strip())
+    if i%10 == 4:
+        total_deaths.append(data.text.strip())
+    if i%10 == 5:
+        new_deaths.append(data.text.strip())
+    if i%10 == 6:
+        total_recovered.append(data.text.strip())
+    if i%10 == 7:
+        active_cases.append(data.text.strip())
+    if i%10 == 8:
+        critical.append(data.text.strip())
+    if i%10 == 0:
+        total_per_mil_pop.append(data.text.strip())
+    i += 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we assume the first column on the left (&lt;em&gt;Country&lt;/em&gt;) can be numbered as 1, then the mathematical operater &lt;code&gt;%10&lt;/code&gt; returns the modulus which corresponds to each column. This can then be used to ensure the correct data is appended to the correct list.&lt;/p&gt;
+&lt;h4 id=&#34;combining-lists-into-a-dictionary&#34;&gt;Combining lists into a dictionary&lt;/h4&gt;
+&lt;p&gt;After all the lists have been populated with the data scraped from the webpage, we can combine it into a dictionary:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;covid19_table = {
+    &amp;quot;columns&amp;quot;: column_names,
+    &amp;quot;country&amp;quot;: countries,
+    &amp;quot;total_cases&amp;quot;: total_cases,
+    &amp;quot;new_cases&amp;quot;: new_cases,
+    &amp;quot;total_deaths&amp;quot;: total_deaths,
+    &amp;quot;new_deaths&amp;quot;: new_deaths,
+    &amp;quot;total_recovered&amp;quot;: total_recovered,
+    &amp;quot;active_cases&amp;quot;: active_cases,
+    &amp;quot;critical&amp;quot;: critical,
+    &amp;quot;total_1M_ pop&amp;quot;: total_per_mil_pop}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;column_names&lt;/code&gt; have been generated seperately:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;column_names = [&amp;quot;Country&amp;quot;, 
+    &amp;quot;Total Cases&amp;quot;, 
+    &amp;quot;New Cases&amp;quot;, 
+    &amp;quot;Total Deaths&amp;quot;, 
+    &amp;quot;New Deaths&amp;quot;, 
+    &amp;quot;Total Recovered&amp;quot;, 
+    &amp;quot;Active Cases&amp;quot;, 
+    &amp;quot;Serious/Critical&amp;quot;, 
+    &amp;quot;Total Cases/1M pop&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We are now ready to start using this data to contruct a tweet that will be sent out daily.&lt;/p&gt;
+&lt;h2 id=&#34;compiling-the-tweet&#34;&gt;Compiling the tweet&lt;/h2&gt;
+&lt;h3 id=&#34;growth-factor&#34;&gt;Growth factor&lt;/h3&gt;
+&lt;p&gt;In order to calculate the growth factor of the coronavirus, the following equation can be used:&lt;/p&gt;
+&lt;p&gt;$$Gf = \frac{N_i}{N_{i-1}}$$&lt;/p&gt;
+&lt;p&gt;where $N_i$ is the amount of new cases for today and $N_{i-1}$ refers to the amount of new cases for the previous day.&lt;/p&gt;
+&lt;p&gt;A .csv file will be used to store each day&amp;rsquo;s stats so that a new growth factor can be calculated each day:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;Date,Total_cases,New_cases,Growth_factor
+2020-03-11,&amp;quot;126,007&amp;quot;,&amp;quot;7,059&amp;quot;,0.0
+2020-03-12,&amp;quot;134,098&amp;quot;,&amp;quot;7,899&amp;quot;,1.12
+2020-03-13,&amp;quot;145,336&amp;quot;,&amp;quot;10,759&amp;quot;,1.36
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A Python libary &lt;code&gt;pandas&lt;/code&gt; will be used to read from, and write to the .csv file. You can install &lt;code&gt;pandas&lt;/code&gt; using:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;pip install pandas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following was added to the python script to read the current content of the .csv file and put in a dictionary &lt;code&gt;new_table&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import pandas
+
+df = pandas.read_csv(&#39;Total.csv&#39;, parse_dates = [&amp;quot;Date&amp;quot;], dayfirst = True)
+new_table = df.to_dict()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The current date is added to the &lt;code&gt;new_table&lt;/code&gt; dictionary as it is the first entry required for the .csv file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;today = str(date.today())
+new_table[&amp;quot;Date&amp;quot;][len(new_table[&amp;quot;Date&amp;quot;])] = today
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we calculate the growth factor. We first search for the position in the &lt;em&gt;country&lt;/em&gt; label of our &lt;code&gt;covid19_table&lt;/code&gt; dictionary for the total numbers for the whole world for the current day. This is under the *country * entry &lt;em&gt;Total:&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;search_position = covid19_table[&amp;quot;country&amp;quot;].index(&amp;quot;Total:&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we retrieve yesterday&amp;rsquo;s data from the &lt;code&gt;new_table&lt;/code&gt; dictionary which was created from the .csv file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;growth_yesterday = new_table[&amp;quot;New_cases&amp;quot;][len(new_table[&amp;quot;New_cases&amp;quot;])-1]
+if type(growth_yesterday) == str:
+        growth_yesterday = new_table[&amp;quot;New_cases&amp;quot;][len(new_table[&amp;quot;New_cases&amp;quot;])-1].replace(&#39;,&#39;,&#39;&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The amount of new cases globally is retrieved from the &lt;code&gt;covid19_table&lt;/code&gt; that we created from our scraped data using the &lt;code&gt;search_position&lt;/code&gt; which indicates where the corresponding data is in the dictionary.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;growth_today = covid19_table[&amp;quot;new_cases&amp;quot;][search_position].replace(&#39;,&#39;,&#39;&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The growth factor can now be calculated:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Gf = round(float(growth_today)/float(growth_yesterday),2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The data needed for the current day&amp;rsquo;s entry for the .csv file is then added to the &lt;code&gt;new_table&lt;/code&gt; dictionary:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;new_table[&amp;quot;Total_cases&amp;quot;][len(new_table[&amp;quot;Total_cases&amp;quot;])] = covid19_table[&amp;quot;total_cases&amp;quot;][search_position]
+new_table[&amp;quot;New_cases&amp;quot;][len(new_table[&amp;quot;New_cases&amp;quot;])] = covid19_table[&amp;quot;new_cases&amp;quot;][search_position]
+new_table[&amp;quot;Growth_factor&amp;quot;][len(new_table[&amp;quot;Growth_factor&amp;quot;])] = str(Gf)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lastly, we convert the &lt;code&gt;new_table&lt;/code&gt; dictionary back to a .csv file that can be used the next day again:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;df = pandas.DataFrame.from_dict(new_table)
+df.to_csv(&amp;quot;Total.csv&amp;quot;,index=False)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;getting-stats-for-the-tweet&#34;&gt;Getting stats for the tweet&lt;/h3&gt;
+&lt;p&gt;We create a dictionary that can be returned when the method is called with all the necessary data required for the tweet:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;position_UK = covid19_table[&amp;quot;country&amp;quot;].index(&amp;quot;UK&amp;quot;)
+position_RSA = covid19_table[&amp;quot;country&amp;quot;].index(&amp;quot;South Africa&amp;quot;)
+new_UK = covid19_table[&amp;quot;new_cases&amp;quot;][position_UK]
+new_RSA = covid19_table[&amp;quot;new_cases&amp;quot;][position_RSA]
+new_total = covid19_table[&amp;quot;new_cases&amp;quot;][search_position].replace(&#39;,&#39;,&#39;&#39;)
+total_UK = covid19_table[&amp;quot;total_cases&amp;quot;][position_UK]
+total_RSA = covid19_table[&amp;quot;total_cases&amp;quot;][position_RSA]
+total_total =     covid19_table[&amp;quot;total_cases&amp;quot;][search_position].replace(&#39;,&#39;,&#39;&#39;)
+
+tweet_data = {
+    &amp;quot;UK&amp;quot;: {
+    &amp;quot;Total&amp;quot;: total_UK,
+    &amp;quot;New&amp;quot;: new_UK
+    },
+    &amp;quot;RSA&amp;quot;: {
+    &amp;quot;Total&amp;quot;:total_RSA,
+    &amp;quot;New&amp;quot;:new_RSA
+    },
+    &amp;quot;Total&amp;quot;: {
+    &amp;quot;Total&amp;quot;: total_total,
+    &amp;quot;New&amp;quot;: new_total
+    },
+    &amp;quot;Gf&amp;quot;: Gf
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;tweet_data&lt;/code&gt; dictionary can now be used to construct the tweet.&lt;/p&gt;
+&lt;h3 id=&#34;constructing-the-tweet&#34;&gt;Constructing the tweet&lt;/h3&gt;
+&lt;p&gt;The best way to create a multi-line tweet is to use a .txt file that can be fed to the twitter API. The content of the .txt file for the tweet was written together with the data in &lt;code&gt;tweet_data&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;with open(&#39;tweet.txt&#39;, &#39;w&#39;,encoding=&#39;utf-8&#39;) as f:
+   f.write(&#39;#COVID19 stats &#39;+str(date.today())+&#39;:\n\
+   \nTotal cases for:\nUK: &#39;+str(tweet_data[&amp;quot;UK&amp;quot;][&amp;quot;Total&amp;quot;])+&#39; (&#39;+str(tweet_data[&amp;quot;UK&amp;quot;][&amp;quot;New&amp;quot;])+&#39;)&#39;+&#39;\
+   \nRSA: &#39;+str(tweet_data[&amp;quot;RSA&amp;quot;][&amp;quot;Total&amp;quot;])+&#39; (&#39;+str(tweet_data[&amp;quot;RSA&amp;quot;][&amp;quot;New&amp;quot;])+&#39;)&#39;+&#39;\
+   \nOverall: &#39;+str(tweet_data[&amp;quot;Total&amp;quot;][&amp;quot;Total&amp;quot;])+&#39; (+&#39;+str(tweet_data[&amp;quot;Total&amp;quot;][&amp;quot;New&amp;quot;])+&#39;)&#39;+&#39;\
+   \n\nGrowth factor: &#39;+str(tweet_data[&amp;quot;Gf&amp;quot;])+&#39;\
+   \n\n#CoronaVirusSA \n#CoronaVirusUK&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The last thing left is to tweet it!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;with open(&#39;tweet.txt&#39;,&#39;r&#39;) as f:
+   api.update_status(f.read())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;    
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/COVID19?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#COVID19&lt;/a&gt; stats 2020-03-27:&lt;br&gt; &lt;br&gt;Total cases for:&lt;br&gt;UK: 14,543 (+2,885) &lt;br&gt;RSA: 1,170 (+243) &lt;br&gt;Overall: 590628 (+58818) &lt;br&gt;&lt;br&gt;Growth factor: 1.0 &lt;a href=&#34;https://twitter.com/hashtag/CoronaVirusSA?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#CoronaVirusSA&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/CoronaVirusUK?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#CoronaVirusUK&lt;/a&gt;&lt;/p&gt;&amp;mdash; COVID-19 stats tracker (@nog_nuus) &lt;a href=&#34;https://twitter.com/nog_nuus/status/1243658693239017484?ref_src=twsrc%5Etfw&#34;&gt;March 27, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     
     <item>
@@ -520,6 +486,7 @@ urllib3==1.25.8
       <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
       <guid>/post/jsae_conference/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;NO&lt;sub&gt;x&lt;/sub&gt; emissions have become a health concern in cities with calls to reduce and ban vehicles with CI engines from entering the city. As such, our aim is to reduce NO&lt;sub&gt;x&lt;/sub&gt; emissions being produced by the CI engine, and Low Temperature Combustion (LTC) is seen as a viable option.&lt;/p&gt;
