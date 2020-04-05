@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Promotional posts | Adriaan&#39;s blog</title>
+    <link>/tags/promotional-posts/</link>
+      <atom:link href="/tags/promotional-posts/index.xml" rel="self" type="application/rss+xml" />
+    <description>Promotional posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Promotional posts</title>
+      <link>/tags/promotional-posts/</link>
+    </image>
+    
+    <item>
+      <title>Web scraping Facebook</title>
+      <link>/project/web-scrape-facebook/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/project/web-scrape-facebook/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#the-data-source&#34;&gt;The data source&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#coding-the-web-scraper&#34;&gt;Coding the web scraper&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#requirements&#34;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#get-the-html-data&#34;&gt;Get the HTML data&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#zooming-in&#34;&gt;Zooming in&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#people-who-shared&#34;&gt;People who shared&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#people-who-follows-your-page&#34;&gt;People who follows your page&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#determine-the-winner&#34;&gt;Determine the winner&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This coding project is building on 
+&lt;a href=&#34;https://www.adriaansblog.com/project/web-scrape-coronavirus/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my first web scraping project&lt;/a&gt; and uses some of the code I developed in that project to get the data from Facebook.
+I am sure you have seen posts from a company&amp;rsquo;s or small business&amp;rsquo;s Facebook page where they ask you to like, share and follow in order to win a prize. 
+But, how do these businesses then determine who have won? They will have to go and compare the names of all the people who:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;liked the post,&lt;/li&gt;
+&lt;li&gt;shared the post and&lt;/li&gt;
+&lt;li&gt;followed their page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and then randomly select a winner from that group of people. If there are about 10 people who engaged with that promotional post, then it won&amp;rsquo;t take too long, but imagine if hundreds of people participated? It will take quite a lot of time to determine the winner then&amp;hellip;&lt;/p&gt;
+&lt;p&gt;To help save a bit of time, we are going to construct a program that will scrape all the names of the people who engaged with the promotion post and randomly select a winner from the eligible participants.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Right! Let&amp;rsquo;s get started!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-data-source&#34;&gt;The data source&lt;/h2&gt;
+&lt;p&gt;We are interested in the names of people who follow the business&amp;rsquo;s page and who liked and shared the post in question. All of this information is available on Facebook. In the end we will have three lists:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a list containing the names of people who follow the business&amp;rsquo;s Facebook page,&lt;/li&gt;
+&lt;li&gt;a list of people who have liked the promotional post and&lt;/li&gt;
+&lt;li&gt;a list of people who have shared the post.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The names that appear in all three lists, will be put in a final list and a random winner will be selected from the list of eligible names.&lt;/p&gt;
+&lt;h2 id=&#34;coding-the-web-scraper&#34;&gt;Coding the web scraper&lt;/h2&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;For this program to work, you will need to install:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 3.7&lt;/li&gt;
+&lt;li&gt;Requests library&lt;/li&gt;
+&lt;li&gt;Beautifulsoup library&lt;/li&gt;
+&lt;li&gt;Selenium library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;get-the-html-data&#34;&gt;Get the HTML data&lt;/h3&gt;
+&lt;p&gt;First thing we need to do is to get the HTML data of the Facebook post we are interested in, into our Python script. We can do this using the Python library, &lt;code&gt;requests&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Web scraping Facebook is a bit different, as the content is behind a login page. We will need to first have a look at the HTML code of the login page. For this project, we are going to log into &lt;a href=&#34;https://mbasic.facebook.com&#34;&gt;https://mbasic.facebook.com&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;start working your way through the HTML until you find the &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; HTML tag.&lt;/li&gt;
+&lt;li&gt;within the &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag look for the &lt;code&gt;method=&amp;quot;post&amp;quot;&lt;/code&gt; argument.&lt;/li&gt;
+&lt;li&gt;go down further into the form tag and look for the &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tags. There should be at least two (&lt;code&gt;username&lt;/code&gt; and &lt;code&gt;password&lt;/code&gt;). The username input tag is generally of &lt;code&gt;type=email&lt;/code&gt; and the password, &lt;code&gt;type=password&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;look within these input tags for a name argument. This is the name of this input field. This is also how requests is going to know where to “enter” your credentials. For this it is &lt;code&gt;name=&amp;quot;email&amp;quot;&lt;/code&gt; and &lt;code&gt;name=&amp;quot;pass&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;log-into-facebook&#34;&gt;Log into Facebook&lt;/h4&gt;
+&lt;p&gt;The following code can be used to log into your Facebook account in order to scrape the necessary data that we need:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;LOGIN_URL = &#39;https://www.facebook.com/login&#39;
+
+payload = {
+  &#39;email&#39;: &#39;your username&#39;,
+  &#39;pass&#39;: &#39;your password&#39;
+}
+
+with requests.Session() as session:
+  post = session.post(LOGIN_URL, data=payload)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;scrape-the-data&#34;&gt;Scrape the data&lt;/h4&gt;
+&lt;p&gt;The URL is standard for most posts. You will need the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ID of post&lt;/li&gt;
+&lt;li&gt;amount of people who engaged with the post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the two variables known, the URL where we will scrape the data is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;REQUEST_URL = f&#39;https://mbasic.facebook.com/ufi/reaction/profile/
+browser/fetch/?limit={limit}&amp;amp;total_count=17&amp;amp;ft_ent_identifier={post_ID}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can scrape the data by adding the following line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;with requests.Session() as session:
+  post = session.post(POST_LOGIN_URL, data=payload)
+  
+  r = session.get(REQUEST_URL) #Add this line
+  #^^^ Add this line... ^^^
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;zooming-in&#34;&gt;Zooming in&lt;/h3&gt;
+&lt;p&gt;With the HTML data stored in the variable &lt;code&gt;r&lt;/code&gt; we can get the names of the people who liked the post with the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;soup = BeautifulSoup(r.content, &amp;quot;html.parser&amp;quot;)
+names = soup.find_all(&#39;h3&#39;, class_=&#39;be&#39;)
+people_who_liked = []
+for name in names:
+  people_who_liked.append(name.text)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The list &lt;code&gt;people_who_liked&lt;/code&gt; has been created can will be used later.&lt;/p&gt;
+&lt;h2 id=&#34;people-who-shared&#34;&gt;People who shared&lt;/h2&gt;
+&lt;p&gt;The same can be done for getting the list of people who shared the post, with a few changes to the code for &lt;code&gt;BeautifulSoup&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;with requests.Session() as session:
+  post = session.post(POST_LOGIN_URL, data=payload)
+  r = session.get(REQUEST_URL)
+  
+soup = BeautifulSoup(r.content, &amp;quot;html.parser&amp;quot;)
+names = soup.find_all(&#39;span&#39;)
+
+people_who_shared = []
+for name in names:
+  people_who_shared.append(name.text)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;people-who-follows-your-page&#34;&gt;People who follows your page&lt;/h2&gt;
+&lt;p&gt;This one is a bit more tricky. We can only access the list of people who follows a page, if you have administrator rights to that pages. Also, the list is not shown when you access it through the website address &lt;a href=&#34;https://mbasic.facebook.com&#34;&gt;https://mbasic.facebook.com&lt;/a&gt; and &lt;a href=&#34;https://m.facebook.com&#34;&gt;https://m.facebook.com&lt;/a&gt; and we will thus need another approach to get the HTML data through the use of the Selenium library:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to Facebook&lt;/li&gt;
+&lt;li&gt;Navigate to page settings listing the people who liked our page&lt;/li&gt;
+&lt;li&gt;Scroll down until all the names are displayed on the screen&lt;/li&gt;
+&lt;li&gt;Scrape the list of names&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;load-the-page-of-names&#34;&gt;Load the page of names&lt;/h4&gt;
+&lt;p&gt;Selenium can take control of the browser and log in:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
+
+webdriver.driver.get(&amp;quot;https://www.facebook.com/login&amp;quot;)
+
+sleep(2)
+
+email_in = webdriver.driver.find_element_by_xpath(&#39;//*[@id=&amp;quot;email&amp;quot;]&#39;)
+email_in.send_keys(username)
+
+password_in = webdriver.driver.find_element_by_xpath(&#39;//*[@id=&amp;quot;pass&amp;quot;]&#39;)
+password_in.send_keys(password)
+
+login_btn = webdriver.driver.find_element_by_xpath(&#39;//*[@id=&amp;quot;loginbutton&amp;quot;]&#39;)
+login_btn.click()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;sleep()&lt;/code&gt; command gives the page time to load before entering the login details. Next we navigate to the page settings listing all the names:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;page_name = your-page-name
+REQUEST_URL = f&#39;https://www.facebook.com/{page_name}/settings/
+?tab=people_and_other_pages&amp;amp;ref=page_edit&#39;
+
+webdriver.driver.get(REQUEST_URL)
+
+sleep(2)
+scrolls = 15
+
+for i in range(1,scrolls):
+  webdriver.driver.execute_script(&amp;quot;window.scrollTo(0, document.body.scrollHeight);&amp;quot;)
+  sleep(3)
+
+  page = webdriver.driver.page_source
+  soup = BeautifulSoup(page, &amp;quot;html.parser&amp;quot;)
+  names = soup.find_all(&#39;a&#39;, class_=&#39;_3cb8&#39;)
+  people_who_liked_page = []
+  for name in names:
+    people_who_liked_page.append(name.text)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the above code we assume that 15 page scrolls will show all the names of the people who follow the page, but you can increase it depending on the amount of people who follow your page.&lt;/p&gt;
+&lt;h2 id=&#34;determine-the-winner&#34;&gt;Determine the winner&lt;/h2&gt;
+&lt;p&gt;We now have three lists:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;People who liked the page&lt;/li&gt;
+&lt;li&gt;People who liked the post&lt;/li&gt;
+&lt;li&gt;People who shared the post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We need to create a new list that has all the names of the people who appear in all three of the above lists:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eligible_to_win = []
+for name in list_A:
+  if name in list_B and name in list_C:
+    eligible_to_win.append(name)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The last thing to do is to select a winner randomly:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;winner = random.choice(eligible)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also select more than one winner:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;winners = random.sample(items, n)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;n&lt;/code&gt; is the amount of winners you want to select.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This code will ensure that you can select a winner to the promotional post in only a few minutes, rather than doing it manually.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
