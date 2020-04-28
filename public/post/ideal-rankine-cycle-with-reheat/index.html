@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="How to calculate the thernal efficiency of an Ideal Rankine Cycle using Python and PYroMat">
+  <meta name="description" content="How to calculate the thernal efficiency of an Ideal Rankine Cycle with reheat using Python and PYroMat">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/ideal-rankine-cycle/">
+  <link rel="alternate" hreflang="en-us" href="/post/ideal-rankine-cycle-with-reheat/">
 
   
 
@@ -256,7 +256,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/ideal-rankine-cycle/">
+  <link rel="canonical" href="/post/ideal-rankine-cycle-with-reheat/">
 
   
   
@@ -272,15 +272,15 @@
   <meta property="twitter:creator" content="@asvn90">
   
   <meta property="og:site_name" content="Adriaan&#39;s blog">
-  <meta property="og:url" content="/post/ideal-rankine-cycle/">
-  <meta property="og:title" content="Ideal Rankine Cycle calculations | Adriaan&#39;s blog">
-  <meta property="og:description" content="How to calculate the thernal efficiency of an Ideal Rankine Cycle using Python and PYroMat"><meta property="og:image" content="/post/ideal-rankine-cycle/featured.png">
-  <meta property="twitter:image" content="/post/ideal-rankine-cycle/featured.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="/post/ideal-rankine-cycle-with-reheat/">
+  <meta property="og:title" content="Ideal Rankine Cycle with reheat calculations | Adriaan&#39;s blog">
+  <meta property="og:description" content="How to calculate the thernal efficiency of an Ideal Rankine Cycle with reheat using Python and PYroMat"><meta property="og:image" content="/post/ideal-rankine-cycle-with-reheat/featured.png">
+  <meta property="twitter:image" content="/post/ideal-rankine-cycle-with-reheat/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-04-21T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-04-28T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-04-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-04-28T00:00:00&#43;00:00">
   
 
   
@@ -304,16 +304,16 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/ideal-rankine-cycle/"
+    "@id": "/post/ideal-rankine-cycle-with-reheat/"
   },
-  "headline": "Ideal Rankine Cycle calculations",
+  "headline": "Ideal Rankine Cycle with reheat calculations",
   
   "image": [
-    "/post/ideal-rankine-cycle/featured.png"
+    "/post/ideal-rankine-cycle-with-reheat/featured.png"
   ],
   
-  "datePublished": "2020-04-21T00:00:00Z",
-  "dateModified": "2020-04-21T00:00:00Z",
+  "datePublished": "2020-04-28T00:00:00Z",
+  "dateModified": "2020-04-28T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -328,7 +328,7 @@
       "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "How to calculate the thernal efficiency of an Ideal Rankine Cycle using Python and PYroMat"
+  "description": "How to calculate the thernal efficiency of an Ideal Rankine Cycle with reheat using Python and PYroMat"
 }
 </script>
 
@@ -346,7 +346,7 @@
 
 
 
-  <title>Ideal Rankine Cycle calculations | Adriaan&#39;s blog</title>
+  <title>Ideal Rankine Cycle with reheat calculations | Adriaan&#39;s blog</title>
 
 </head>
 
@@ -566,7 +566,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Ideal Rankine Cycle calculations</h1>
+  <h1>Ideal Rankine Cycle with reheat calculations</h1>
 
   
 
@@ -584,7 +584,7 @@
     
       
     
-    Apr 21, 2020
+    Apr 28, 2020
   </span>
   
 
@@ -601,7 +601,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="/post/ideal-rankine-cycle/#disqus_thread"></a>
+  <a href="/post/ideal-rankine-cycle-with-reheat/#disqus_thread"></a>
   
 
   
@@ -678,7 +678,7 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 405px;">
   <div style="position: relative">
-    <img src="/post/ideal-rankine-cycle/featured_hu9a02e8e65853561f6761efbfdbabc869_358035_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <img src="/post/ideal-rankine-cycle-with-reheat/featured_hu9a02e8e65853561f6761efbfdbabc869_357645_720x0_resize_lanczos_2.png" alt="" class="featured-image">
     
   </div>
 </div>
@@ -694,96 +694,125 @@
 
 <p>The content of this post is based on the video:</p>
 <div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U4t1CBDMlmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qGvLk6XqcVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <div style="text-align: left;">
 
 <div id="the-problem" class="section level3">
 <h3>The problem</h3>
-<p>Consider the following question:</p>
-<p><strong>Determine the efficiency of a Rankine cycle using steam as the working fluid in which the condenser pressure is 10 kPa. The boiler pressure is 2 MPa. The steam leaves the boiler as saturated vapor.</strong></p>
-<p><img src="/post/Ideal-Rankine-Cycle/index_files/Rankine-cycle-reheat.PNG" style="width:80.0%" /></p>
+<p>Consider a reheat cycle utilizing steam. Steam leaves the boiler and enters the turbine at 4 MPa, 400<span class="math inline">\(^\circ\)</span>C. After expansion in the turbine to 400 kPa, the steam is reheated to 400<span class="math inline">\(^\circ\)</span>C and then expanded in the low-pressure turbine to 10 kPa. Determine the cycle efficiency.</p>
+<p><img src="/post/Ideal-Rankine-Cycle-with-reheat/index_files/Rankine-cycle-reheat.PNG" style="width:80.0%" /></p>
 </div>
 <div id="initiate-pyromat-and-configure-its-units" class="section level3">
 <h3>Initiate <em>PYroMat</em> and configure its units:</h3>
-<p>The first thing that we need to do before we start with solving the problem, is to import the necessary packages and configure PYroMat to use the correct units:</p>
 <pre class="python"><code>import pyromat as pm
 
 pm.config[&quot;unit_pressure&quot;] = &quot;kPa&quot;
 pm.config[&quot;def_p&quot;] = 100
 
-mp_water = pm.get(&quot;mp.H2O&quot;)</code></pre>
-<p>To determine the cycle efficiency, we must calculate the turbine work, the pump work, and the heat transfer to the steam in the boiler. We do this by considering a control surface around each of these components in turn. In each case the thermodynamic model is the steam tables, and the process is steady state with negligible changes in kinetic and potential energies.</p>
+mp_water = pm.get(&quot;mp.H2O&quot;) # &lt;-- for multi-phase water properties</code></pre>
+<p>To solve this problem we consider a control surface around the pump, the boiler, the turbine, and the condenser.</p>
 </div>
 <div id="the-pump" class="section level3">
 <h3>The pump</h3>
 <p>First, consider the pump:</p>
 <pre class="python"><code>#saturated liquid, thus x = 0
-p1 = 10 # &lt;--given
-T1 = mp_water.Ts(p=p1)[0]
+p1 = 10
 s1 = mp_water.ss(p=p1)[0]
-p2 = 2000 # &lt;--given and converted to kPa
-s2= s1
+T1 = mp_water.Ts(p=p1)[0]
+
+p2 = 4000
+s2 = s1
+T2 = mp_water.T_h(h=h2,p=p2)
+
+h2dash = mp_water.hs(p=p2)[0]
+s2dash = mp_water.ss(p=p2)[0]
+T2dash = mp_water.Ts(p=p2)[0]
+
+h3dash = mp_water.hs(p=p2)[1]
+s3dash = mp_water.ss(p=p2)[1]
+T3dash = T2dash
+
 v = 1/mp_water.ds(p=p1)[0]
 
 w_p = v*(p2-p1)
+
+print(f&quot;Specific volume: {round(float(v),5)} m^3/kg&quot;)
 print(f&quot;Work required by pump: {round(float(w_p),1)} kJ/kg&quot;)</code></pre>
-<pre class="cmd"><code>Work required by pump: 2.0 kJ/kg</code></pre>
-<p>After the work required by the pump is calculated, the enthalpy value after the pump (point 2) can be calculated:</p>
+<pre class="cmd"><code>Specific volume: 0.00101 m^3/kg
+Work required by pump: 4.0 kJ/kg</code></pre>
 <pre class="python"><code>h1 = mp_water.hs(p=p1)[0]
 h2 = h1+w_p
-T2 = mp_water.T_h(p=p2,h=h2)
-
 print(f&quot;h2 = {round(float(h2),1)} kJ/kg&quot;)</code></pre>
-<pre class="cmd"><code>h2 = 193.8 kJ/kg</code></pre>
+<pre class="cmd"><code>h2 = 195.8 kJ/kg</code></pre>
+</div>
+<div id="the-hp-turbine" class="section level3">
+<h3>The HP turbine</h3>
+<p>Next, let’s consider the high pressure turbine:</p>
+<pre class="python"><code>p3 = p2
+T3 = 400 + 273.15
+h3 = mp_water.h(p=p3, T=T3)
+s3 = mp_water.s(p=p3, T=T3)
+
+p4 = 400
+s4 = s3
+T4, x4 = mp_water.T_s(s=s4, p=p4, quality=True)
+h4 = mp_water.h(x=x4, p=p4)
+
+w_HPt = h3-h4
+
+print(f&quot;Quality of intermediate pressure steam: {round(float(x4),4)}&quot;)
+print(f&quot;Work generated by HP turbine: {round(float(w_HPt),1)} kJ/kg&quot;)</code></pre>
+<pre class="cmd"><code>Quality of intermediate pressure steam: 0.9757
+Work generated by HP turbine: 528.2 kJ/kg</code></pre>
+</div>
+<div id="the-lp-turbine" class="section level3">
+<h3>The LP turbine</h3>
+<p>Now, we consider the low pressure turbine:</p>
+<pre class="python"><code>p5 = p4
+T5 = 400 + 273.15 
+h5 = mp_water.h(p=p5, T=T5)
+s5 = mp_water.s(p=p5, T=T5)
+
+p6 = p1
+s6 = s5
+
+T6, x6 = mp_water.T_s(s=s6, p=p6, quality=True)
+h6 = mp_water.h(x=x6, p=p6)
+
+w_LPt = h5-h6
+
+print(f&quot;Quality of low pressure steam: {round(float(x6),4)}&quot;)
+print(f&quot;Work generated by LP turbine: {round(float(w_LPt),1)} kJ/kg&quot;)
+print(f&quot;Total work output by turbine: {round(float(w_HPt+w_LPt),1)} kJ/kg&quot;)</code></pre>
+<pre class="cmd"><code>Quality of low pressure steam: 0.9669
+Work generated by LP turbine: 769.3 kJ/kg
+Total work output by turbine: 1297.5 kJ/kg</code></pre>
 </div>
 <div id="the-boiler" class="section level3">
 <h3>The boiler</h3>
-<p>Next, lets consider the boiler:</p>
-<pre class="python"><code># steam leaves the boiler as saturated vapor, thus x = 1
-p3 = p2
-T3 = mp_water.Ts(p=p3)
-
-h3 = mp_water.hs(p=p3)[1]
-s3dash = mp_water.ss(p=p3)[0]
-T3dash = T3
-s3 = mp_water.ss(p=p3)[1]
-q_H = h3-h2
-
-print(f&quot;Heat input by boiler: {round(float(q_H),1)} kJ/kg&quot;)
-</code></pre>
-<pre class="cmd"><code>Heat input by boiler: 2604.5 kJ/kg</code></pre>
-</div>
-<div id="the-turbine" class="section level3">
-<h3>The turbine</h3>
-<p>Now, we consider the turbine:</p>
-<pre class="python"><code>p4 = p1
-s4 = s3
-T4, x = mp_water.T_s(s=s4,p=p4, quality=True)
-h4 = mp_water.h(p=p4,x=x)
-w_t = h3-h4
-print(f&quot;Quality of low pressure steam: {round(float(x),4)}&quot;)
-print(f&quot;Work generated by turbine: {round(float(w_t),1)} kJ/kg&quot;)</code></pre>
-<pre class="cmd"><code>Quality of low pressure steam: 0.7587
-Work generated by turbine: 791.7 kJ/kg</code></pre>
+<p>Next, let’s consider the boiler:</p>
+<pre class="python"><code>q_H = (h3-h2)+(h5-h4)
+print(f&quot;Heat input by boiler: {round(float(q_H),1)} kJ/kg&quot;)</code></pre>
+<pre class="cmd"><code>Heat input by boiler: 3606.2 kJ/kg</code></pre>
 </div>
 <div id="the-condenser" class="section level3">
 <h3>The condenser</h3>
 <p>Finally, we consider the condenser:</p>
-<pre class="python"><code>q_L = h4-h1
+<pre class="python"><code>q_L = h6-h1
 print(f&quot;Heat rejected by the condenser: {round(float(q_L),1)} kJ/kg&quot;)</code></pre>
-<pre class="cmd"><code>Heat rejected by the condenser: 1814.8 kJ/kg</code></pre>
+<pre class="cmd"><code>Heat rejected by the condenser: 2312.8 kJ/kg</code></pre>
 </div>
-<div id="thermal-efficiency" class="section level3">
-<h3>Thermal efficiency</h3>
+<div id="calculating-the-thermal-efficiency" class="section level3">
+<h3>Calculating the thermal efficiency</h3>
 <p>We can now calculate the thermal efficiency with <span class="math display">\[\eta_{th}=\frac{w_{net}}{q_H}\]</span></p>
-<pre class="python"><code>eta_th = (w_t-w_p)/q_H*100
+<pre class="python"><code>eta_th = (w_HPt+w_LPt-w_p)/q_H*100
 print(f&quot;Thermal efficiency is: {round(float(eta_th),1)}%&quot;)</code></pre>
-<pre class="cmd"><code>Thermal efficiency is: 30.3%</code></pre>
+<pre class="cmd"><code>Thermal efficiency is: 35.9%</code></pre>
 </div>
-<div id="plotting-the-ideal-rankine-cycle" class="section level3">
-<h3>Plotting the Ideal Rankine Cycle</h3>
-<p>After all the points have been calculated, the Rankine Cycle can be shown visually on a graph.</p>
+<div id="the-rankine-cycle-on-a-graph" class="section level3">
+<h3>The Rankine cycle on a graph</h3>
+<p>Once all the values have been calculated, the ideal Rankine Cycle can be shown visually with the use of a graph.</p>
 <pre class="python"><code>import numpy as np
 import matplotlib.pyplot as plt
 
@@ -803,18 +832,28 @@ plt.plot(s[0],T, &#39;b--&#39;)
 plt.plot(s[1],T,&#39;r--&#39;)
 plt.ylabel(&#39;Temperature (K)&#39;)
 plt.xlabel(&#39;Entropy (s)&#39;)
-plt.plot([s1, s2, s3dash, s3, s4, s1],[T1, T2, T3dash, T3, T4, T1], &#39;black&#39;)
+plt.xlim(-2,10)
+#plt.ylim(200,800)
+plt.plot([s1, s2, s2dash, s3dash, s3, s4, s5, s6, s1],[T1, T2, T2dash, T3dash, T3, T4, T5, T6, T1], &#39;black&#39;)
 
 plt.text(s1-.1,T1,f&#39;(1)\nT = {round(float(T1),2)} K\nh = {round(float(h1),1)} kJ/kg\n s = {round(float(s1),3)} kJ/kgK&#39;,
     ha=&#39;right&#39;,backgroundcolor=&#39;white&#39;)
-plt.text(1.6,330,f&#39;(2)\nT = {round(float(T2),2)} K\nh = {round(float(h2),1)} kJ/kg \ns = {round(float(s2),3)} kJ/kgK&#39;,
+plt.text(1.6,330,f&#39;(2)\nT = {round(float(T2),2)} K\nh = {round(float(h2),1)} kJ/kg&#39;,
     ha=&#39;left&#39;,backgroundcolor=&#39;white&#39;)
-plt.text(s3+.1,T3,f&#39;(3)\nT = {round(float(T3),2)} K\nh = {round(float(h3),1)} kJ/kg \ns = {round(float(s3),3)} kJ/kgK&#39;,
+plt.text(s2dash-.15,T2dash,f&quot;(2&#39;)\nT = {round(float(T2dash),2)} K\nh = {round(float(h2dash),1)} kJ/kg \ns = {round(float(s2dash),3)} kJ/kgK&quot;,
+    ha=&#39;right&#39;,backgroundcolor=&#39;white&#39;)
+plt.text(s3dash-.1,T3dash-60,f&quot;(3&#39;)\nh = {round(float(h3dash),1)} kJ/kg \ns = {round(float(s3dash),3)} kJ/kgK&quot;,
+    ha=&#39;right&#39;,backgroundcolor=&#39;white&#39;)
+plt.text(6.3,T3-50,f&#39;(3)\nT = {round(float(T3),2)} K\nh = {round(float(h3),1)} kJ/kg&#39;,
+    ha=&#39;right&#39;,backgroundcolor=&#39;white&#39;)
+plt.text(s4-.1,T4-80,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)} kJ/kg \ns = {round(float(s4),3)} kJ/kgK\nx = {round(float(x4),3)}&#39;,
+    ha=&#39;right&#39;,backgroundcolor=&#39;white&#39;)
+plt.text(s5+.1,T5-70,f&#39;(5)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)} kJ/kg \ns = {round(float(s4),3)} kJ/kgK&#39;,
     ha=&#39;left&#39;,backgroundcolor=&#39;white&#39;)
-plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)} kJ/kg \ns = {round(float(s4),3)} kJ/kgK\nx = {round(float(x),3)}&#39;,
+plt.text(s6+.1,T6,f&#39;(6)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)} kJ/kg \nx = {round(float(x6),3)}&#39;,
     ha=&#39;left&#39;,backgroundcolor=&#39;white&#39;)
 </code></pre>
-<p><img src="/post/Ideal-Rankine-Cycle/index_files/output_16_1.png" style="width:80.0%" /></p>
+<p><img src="/post/Ideal-Rankine-Cycle-with-reheat/index_files/output_18_1.png" style="width:80.0%" /></p>
 </div>
 
     </div>
@@ -848,7 +887,7 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/ideal-rankine-cycle/&amp;text=Ideal%20Rankine%20Cycle%20calculations" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/ideal-rankine-cycle-with-reheat/&amp;text=Ideal%20Rankine%20Cycle%20with%20reheat%20calculations" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -861,7 +900,7 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/ideal-rankine-cycle/&amp;t=Ideal%20Rankine%20Cycle%20calculations" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/ideal-rankine-cycle-with-reheat/&amp;t=Ideal%20Rankine%20Cycle%20with%20reheat%20calculations" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -874,7 +913,7 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
       
       
       <li>
-        <a href="mailto:?subject=Ideal%20Rankine%20Cycle%20calculations&amp;body=/post/ideal-rankine-cycle/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Ideal%20Rankine%20Cycle%20with%20reheat%20calculations&amp;body=/post/ideal-rankine-cycle-with-reheat/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -887,7 +926,7 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/ideal-rankine-cycle/&amp;title=Ideal%20Rankine%20Cycle%20calculations" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/ideal-rankine-cycle-with-reheat/&amp;title=Ideal%20Rankine%20Cycle%20with%20reheat%20calculations" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -900,7 +939,7 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Ideal%20Rankine%20Cycle%20calculations%20/post/ideal-rankine-cycle/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Ideal%20Rankine%20Cycle%20with%20reheat%20calculations%20/post/ideal-rankine-cycle-with-reheat/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -913,7 +952,7 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/ideal-rankine-cycle/&amp;title=Ideal%20Rankine%20Cycle%20calculations" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/ideal-rankine-cycle-with-reheat/&amp;title=Ideal%20Rankine%20Cycle%20with%20reheat%20calculations" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1087,6 +1126,8 @@ plt.text(s4+.1,T4,f&#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)
   <div class="article-widget content-widget-hr">
     <h3>Related</h3>
     <ul>
+      
+      <li><a href="/post/ideal-rankine-cycle/">Ideal Rankine Cycle calculations</a></li>
       
       <li><a href="/project/web-scrape-facebook/">Web scraping Facebook</a></li>
       
