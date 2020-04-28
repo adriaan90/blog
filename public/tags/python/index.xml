@@ -5,12 +5,148 @@
     <link>/tags/python/</link>
       <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Python</title>
       <link>/tags/python/</link>
     </image>
+    
+    <item>
+      <title>Ideal Rankine Cycle calculations</title>
+      <link>/post/ideal-rankine-cycle/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/ideal-rankine-cycle/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The content of this post is based on the video:&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/U4t1CBDMlmg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;div style=&#34;text-align: left;&#34;&gt;
+
+&lt;div id=&#34;the-problem&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Consider the following question:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Determine the efficiency of a Rankine cycle using steam as the working fluid in which the condenser pressure is 10 kPa. The boiler pressure is 2 MPa. The steam leaves the boiler as saturated vapor.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Ideal-Rankine-Cycle/index_files/Rankine-cycle-reheat.PNG&#34; style=&#34;width:80.0%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;initiate-pyromat-and-configure-its-units&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Initiate &lt;em&gt;PYroMat&lt;/em&gt; and configure its units:&lt;/h3&gt;
+&lt;p&gt;The first thing that we need to do before we start with solving the problem, is to import the necessary packages and configure PYroMat to use the correct units:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import pyromat as pm
+
+pm.config[&amp;quot;unit_pressure&amp;quot;] = &amp;quot;kPa&amp;quot;
+pm.config[&amp;quot;def_p&amp;quot;] = 100
+
+mp_water = pm.get(&amp;quot;mp.H2O&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To determine the cycle efficiency, we must calculate the turbine work, the pump work, and the heat transfer to the steam in the boiler. We do this by considering a control surface around each of these components in turn. In each case the thermodynamic model is the steam tables, and the process is steady state with negligible changes in kinetic and potential energies.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-pump&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The pump&lt;/h3&gt;
+&lt;p&gt;First, consider the pump:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;#saturated liquid, thus x = 0
+p1 = 10 # &amp;lt;--given
+T1 = mp_water.Ts(p=p1)[0]
+s1 = mp_water.ss(p=p1)[0]
+p2 = 2000 # &amp;lt;--given and converted to kPa
+s2= s1
+v = 1/mp_water.ds(p=p1)[0]
+
+w_p = v*(p2-p1)
+print(f&amp;quot;Work required by pump: {round(float(w_p),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Work required by pump: 2.0 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After the work required by the pump is calculated, the enthalpy value after the pump (point 2) can be calculated:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;h1 = mp_water.hs(p=p1)[0]
+h2 = h1+w_p
+T2 = mp_water.T_h(p=p2,h=h2)
+
+print(f&amp;quot;h2 = {round(float(h2),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;h2 = 193.8 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-boiler&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The boiler&lt;/h3&gt;
+&lt;p&gt;Next, lets consider the boiler:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;# steam leaves the boiler as saturated vapor, thus x = 1
+p3 = p2
+T3 = mp_water.Ts(p=p3)
+
+h3 = mp_water.hs(p=p3)[1]
+s3dash = mp_water.ss(p=p3)[0]
+T3dash = T3
+s3 = mp_water.ss(p=p3)[1]
+q_H = h3-h2
+
+print(f&amp;quot;Heat input by boiler: {round(float(q_H),1)} kJ/kg&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Heat input by boiler: 2604.5 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-turbine&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The turbine&lt;/h3&gt;
+&lt;p&gt;Now, we consider the turbine:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;p4 = p1
+s4 = s3
+T4, x = mp_water.T_s(s=s4,p=p4, quality=True)
+h4 = mp_water.h(p=p4,x=x)
+w_t = h3-h4
+print(f&amp;quot;Quality of low pressure steam: {round(float(x),4)}&amp;quot;)
+print(f&amp;quot;Work generated by turbine: {round(float(w_t),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Quality of low pressure steam: 0.7587
+Work generated by turbine: 791.7 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-condenser&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The condenser&lt;/h3&gt;
+&lt;p&gt;Finally, we consider the condenser:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;q_L = h4-h1
+print(f&amp;quot;Heat rejected by the condenser: {round(float(q_L),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Heat rejected by the condenser: 1814.8 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;thermal-efficiency&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Thermal efficiency&lt;/h3&gt;
+&lt;p&gt;We can now calculate the thermal efficiency with &lt;span class=&#34;math display&#34;&gt;\[\eta_{th}=\frac{w_{net}}{q_H}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;eta_th = (w_t-w_p)/q_H*100
+print(f&amp;quot;Thermal efficiency is: {round(float(eta_th),1)}%&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Thermal efficiency is: 30.3%&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;plotting-the-ideal-rankine-cycle&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Plotting the Ideal Rankine Cycle&lt;/h3&gt;
+&lt;p&gt;After all the points have been calculated, the Rankine Cycle can be shown visually on a graph.&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import numpy as np
+import matplotlib.pyplot as plt
+
+p = np.linspace(1,22063,1000)
+T = mp_water.Ts(p=p)
+s = mp_water.ss(p=p)
+
+
+font = {&amp;#39;family&amp;#39; : &amp;#39;Times New Roman&amp;#39;,
+        &amp;#39;size&amp;#39;   : 22}
+
+
+plt.figure(figsize=(15,10))
+plt.title(&amp;#39;Ideal Rankine Cycle T-s Diagram&amp;#39;)
+plt.rc(&amp;#39;font&amp;#39;, **font)
+plt.plot(s[0],T, &amp;#39;b--&amp;#39;)
+plt.plot(s[1],T,&amp;#39;r--&amp;#39;)
+plt.ylabel(&amp;#39;Temperature (K)&amp;#39;)
+plt.xlabel(&amp;#39;Entropy (s)&amp;#39;)
+plt.plot([s1, s2, s3dash, s3, s4, s1],[T1, T2, T3dash, T3, T4, T1], &amp;#39;black&amp;#39;)
+
+plt.text(s1-.1,T1,f&amp;#39;(1)\nT = {round(float(T1),2)} K\nh = {round(float(h1),1)} kJ/kg\n s = {round(float(s1),3)} kJ/kgK&amp;#39;,
+    ha=&amp;#39;right&amp;#39;,backgroundcolor=&amp;#39;white&amp;#39;)
+plt.text(1.6,330,f&amp;#39;(2)\nT = {round(float(T2),2)} K\nh = {round(float(h2),1)} kJ/kg \ns = {round(float(s2),3)} kJ/kgK&amp;#39;,
+    ha=&amp;#39;left&amp;#39;,backgroundcolor=&amp;#39;white&amp;#39;)
+plt.text(s3+.1,T3,f&amp;#39;(3)\nT = {round(float(T3),2)} K\nh = {round(float(h3),1)} kJ/kg \ns = {round(float(s3),3)} kJ/kgK&amp;#39;,
+    ha=&amp;#39;left&amp;#39;,backgroundcolor=&amp;#39;white&amp;#39;)
+plt.text(s4+.1,T4,f&amp;#39;(4)\nT = {round(float(T4),2)} K\nh = {round(float(h4),1)} kJ/kg \ns = {round(float(s4),3)} kJ/kgK\nx = {round(float(x),3)}&amp;#39;,
+    ha=&amp;#39;left&amp;#39;,backgroundcolor=&amp;#39;white&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Ideal-Rankine-Cycle/index_files/output_16_1.png&#34; style=&#34;width:80.0%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Web scraping Facebook</title>
