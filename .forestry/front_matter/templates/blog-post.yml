@@ -58,3 +58,5 @@ fields:
 - type: text
   name: url_video
   label: url_video
+pages:
+- content/post/ideal-rankine-cycle-with-regenerative-heating.md
