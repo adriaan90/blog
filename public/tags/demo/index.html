@@ -209,6 +209,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161404758-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-161404758-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -233,13 +271,16 @@
   
   <meta property="twitter:card" content="summary">
   
+  <meta property="twitter:site" content="@asvn90">
+  <meta property="twitter:creator" content="@asvn90">
+  
   <meta property="og:site_name" content="Adriaan&#39;s blog">
   <meta property="og:url" content="/tags/demo/">
   <meta property="og:title" content="Demo | Adriaan&#39;s blog">
   <meta property="og:description" content="Lecturer in Design and Dynamics"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2016-04-27T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2020-07-18T00:00:00&#43;00:00">
   
 
   
@@ -413,6 +454,35 @@
         
 
         <li class="nav-item">
+          <a class="nav-link " href="/#courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
           <a class="nav-link " href="/#contact"><span>Contact</span></a>
         </li>
 
@@ -488,10 +558,10 @@
       
     
     <div>
-      <h2><a href="http://example.org" target="_blank" rel="noopener">External Project</a></h2>
+      <h2><a href="https://bookdown.org/asvn90/Understanding-Thermodynamics/" target="_blank" rel="noopener">Understanding Thermodynamics</a></h2>
       <div class="article-style">
         
-          An example of linking directly to an external project website using `external_link`.
+          Understanding Mechanical Engineering Thermodynamics.
         
       </div>
     </div>
@@ -586,6 +656,8 @@
     
 
     
+    
+    <script id="dsq-count-scr" src="https://adriaansblog-com.disqus.com/count.js" async></script>
     
 
     

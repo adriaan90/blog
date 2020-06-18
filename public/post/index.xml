@@ -5,12 +5,109 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Ideal Rankine Cycle with feedwater heater calculations</title>
+      <link>/post/ideal-rankine-cycle-with-regen/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/ideal-rankine-cycle-with-regen/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The content of this post is based on the video:&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/pWCvllVFNHQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;div style=&#34;text-align: left;&#34;&gt;
+
+&lt;div id=&#34;the-problem&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Consider a regenerative cycle using steam as the working fluid. Steam leaves the boiler and enters the turbine at 4 MPa, 400&lt;span class=&#34;math inline&#34;&gt;\(^\circ\)&lt;/span&gt;C. After expansion to 400 kPa, some of the steam is extracted from the turbine to heat the feedwater in an open FWH. The pressure in the FWH is 400 kPa, and the water leaving it is saturated liquid at 400 kPa. The steam not extracted expands to 10 kPa. Determine the cycle efficiency.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Ideal-Rankine-Cycle-with-regen/index_files/Rankine-cycle-regen.PNG&#34; style=&#34;width:80.0%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Looking at the mass flow of steam entering and exiting the turbine:
+&lt;span class=&#34;math display&#34;&gt;\[y = \dot{m}_6/\dot{m}_5\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and thus &lt;span class=&#34;math inline&#34;&gt;\(\dot{m}_6\)&lt;/span&gt; can be written as a function of &lt;span class=&#34;math inline&#34;&gt;\(\dot{m}_5\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[\dot{m}_6 = y\dot{m}_5\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Similarly &lt;span class=&#34;math inline&#34;&gt;\(\dot{m}_7\)&lt;/span&gt; can be written as:
+&lt;span class=&#34;math display&#34;&gt;\[\dot{m}_7=(1-y)\dot{m}_5\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and
+&lt;span class=&#34;math display&#34;&gt;\[\dot{m}_7=(1-y)\dot{m}_5=\dot{m}_1=\dot{m}_2\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;initiate-pyromat-and-configure-its-units&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Initiate &lt;em&gt;PYroMat&lt;/em&gt; and configure its units:&lt;/h3&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import pyromat as pm
+import numpy as np
+
+pm.config[&amp;quot;unit_pressure&amp;quot;] = &amp;quot;kPa&amp;quot;
+pm.config[&amp;quot;def_p&amp;quot;] = 100
+
+mp_water = pm.get(&amp;quot;mp.H2O&amp;quot;) # &amp;lt;-- for multi-phase water properties&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To solve this problem we consider a control surface around the pump, the boiler, the turbine, and the condenser.&lt;/p&gt;
+&lt;p&gt;First, let us consider the &lt;strong&gt;low pressure pump&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;p1 = 10 # &amp;lt;-- given
+p2 = 400 # &amp;lt;-- given
+
+v1 = 1/mp_water.ds(p=p1)[0]
+
+w_pump1 = v1*(p2-p1)
+h2 = h1+w_pump1
+print(f&amp;quot;Work required by pump 1: {round(float(w_pump1),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Work required by pump 1: 0.4 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, let’s consider &lt;strong&gt;the turbine&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;p5 = 4000 # &amp;lt;-- given
+T5 = 400+273.15 # K &amp;lt;-- given
+h5 = mp_water.h(p=p5, T=T5)
+s5 = mp_water.s(p=p5, T=T5)
+
+s6 =s5
+p6 = 400 # &amp;lt;-- given
+T6, x6 = mp_water.T_s(s=s6, p=p6, quality=True)
+h6 = mp_water.h(x=x6, p=p6)
+
+print(f&amp;quot;Quality of bled steam: {round(float(x6),4)}&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Quality of bled steam: 0.9757&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, let’s consider the &lt;strong&gt;feedwater heater&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;p3 = 400 # &amp;lt;-- given
+h3 = mp_water.hs(p=p3)[0]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The energy conservation equation for the FWH is: &lt;span class=&#34;math display&#34;&gt;\[y(h_6)+(1-y)h_2 = h_3\]&lt;/span&gt;
+This can be re-arranged to solve &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; explicitly: &lt;span class=&#34;math display&#34;&gt;\[y = \frac{h_2 - h_3}{h_2 - h_6}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;y = (h2-h3)/(h2-h6)
+print(f&amp;quot;y = {round(float(y),4)}&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;y = 0.1654&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now calculate the work extracted by the turbine:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;p7 = p1
+s7 = s5
+T7, x7 = mp_water.T_s(s=s7, p=p7, quality=True)
+h7 = mp_water.h(x=x7, p=p7)
+w_t = h5 - y*h6 - (1-y)*h7
+print(f&amp;quot;Work generated by turbine: {round(float(w_t),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Work generated by turbine: 980.4 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, let’s consider the high pressure pump:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;p4 = 4000 # &amp;lt;-- given
+v3 = 1/mp_water.ds(p=p3)[0]
+w_pump2 = v3*(p4-p3)
+print(f&amp;quot;Work required by pump 2: {round(float(w_pump2),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Work required by pump 2: 3.9 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we can consider the &lt;strong&gt;boiler&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;h4 = h3 + w_pump2
+q_H = h5-h4
+print(f&amp;quot;Heat input by boiler: {round(float(q_H),1)} kJ/kg&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Heat input by boiler: 2605.9 kJ/kg&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now calculate the thermal efficiency with &lt;span class=&#34;math display&#34;&gt;\[\eta_{th}=\frac{w_{net}}{q_H}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;eta_th = (w_t - w_pump1*(1-y) - w_pump2)/q_H*100
+print(f&amp;quot;Thermal efficiency is: {round(float(eta_th),2)}%&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;Thermal efficiency is: 37.46%&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Ideal Rankine Cycle with reheat calculations</title>
