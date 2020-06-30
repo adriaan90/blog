@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/course/</loc>
+    <loc>/project/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/course/understanding-thermodynamics/</loc>
+    <loc>/project2/understanding-thermodynamics/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,17 +58,7 @@
   </url>
   
   <url>
-    <loc>/project/</loc>
-    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/promotional-posts/</loc>
-    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project2/web-scrape-facebook/</loc>
     <lastmod>2020-04-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,18 +83,8 @@
   </url>
   
   <url>
-    <loc>/project2/web-scrape-coronavirus/</loc>
-    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/web-scrape-coronavirus/</loc>
     <lastmod>2020-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project2/twitter-bot-project/</loc>
-    <lastmod>2020-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
