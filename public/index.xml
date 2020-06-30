@@ -14,9 +14,9 @@
     
     <item>
       <title>Understanding Thermodynamics</title>
-      <link>/project2/understanding-thermodynamics/</link>
-      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/project2/understanding-thermodynamics/</guid>
+      <link>/project2/external-project/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/project2/external-project/</guid>
       <description></description>
     </item>
     
@@ -1157,14 +1157,6 @@ For the second factorial design, we optimised towards a maximum of CO emissions 
       <guid>/terms/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project2/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project2/external-project/</guid>
-      <description></description>
     </item>
     
   </channel>
