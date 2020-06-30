@@ -6,6 +6,6 @@ image:
   focal_point: Smart
 summary: Understanding Mechanical Engineering Thermodynamics.
 tags:
-- Demo
+
 title: Understanding Thermodynamics
 ---
