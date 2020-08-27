@@ -16,7 +16,7 @@ education:
 email: "asvn90@gmail.com"
 interests:
 - Programming engineering solutions
-- Experimenting to validate designs
+- Validate models through experimentation
 - Continuously improving designs
 name: Adriaan van Niekerk
 organizations:
@@ -46,7 +46,7 @@ user_groups:
 - Visitors
 ---
 
-My name is Adriaan van Niekerk, and my passion is designing innovate engineering products and teaching other to do the same. My mission is to share the knowledge and experience gained after numerous years working in this field.
+My name is Adriaan van Niekerk, and my passion is designing innovate engineering products and teaching others to do the same. My mission is to share the knowledge and experience gained after numerous years working in this field.
 
 This site provides you with a glimpse of what I have been up to as well as external links to all my social media accounts and projects.
 
