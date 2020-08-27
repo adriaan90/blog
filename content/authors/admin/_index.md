@@ -1,13 +1,13 @@
 ---
 authors:
 - admin
-bio: My research interests include power generation, biofuel, emissions reduction and programming.
+bio: A Mechanical Engineer passionate about creating robust and innovative products and teaching other to do the same.
 education:
   courses:
   - course: PhD in Automotive Engineering
     institution: University of the West of England
     year: 2020
-  - course: MEng Nuclear Engineering
+  - course: MEng in Nuclear Engineering
     institution: North West University
     year: 2016
   - course: BEng in Mechanical Engineering
@@ -15,9 +15,9 @@ education:
     year: 2013
 email: "asvn90@gmail.com"
 interests:
-- Programming stuff
-- Making stuff
-- Breaking stuff
+- Programming engineering solutions
+- Experimenting to validate designs
+- Continuously improving designs
 name: Adriaan van Niekerk
 organizations:
 - name: University of the West of England
@@ -46,5 +46,7 @@ user_groups:
 - Visitors
 ---
 
-I teach Mechanical Engineering principles, from using equations of movement to how to design a front suspension for an off-road vehicle using FEA.
-I am also a researcher, using the material I teach to solve problems found in coal transporting trains and diesel cars. I tinker with any software package I can get a hold of. I quite enjoy using Matlab, SolidWorks, LaTeX and Excel. 
+My name is Adriaan van Niekerk, and my passion is designing innovate engineering products and teaching other to do the same. My mission is to share the knowledge and experience gained after numerous years working in this field.
+
+This site provides you with a glimpse of what I have been up to as well as external links to all my social media accounts and projects.
+
