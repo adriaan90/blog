@@ -36,7 +36,8 @@ url_video: ""
 👾 Jupyter Notebook: https://jupyter.org/install
 
 👾 Open Broadcast Software: https://obsproject.com/
-inci Resolve 16: https://www.blackmagicdesign.com/uk/products/davinciresolve/
+
+👾 DaVinci Resolve 16: https://www.blackmagicdesign.com/uk/products/davinciresolve/
 
 
 
