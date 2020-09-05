@@ -1,0 +1,44 @@
+---
+date: "2020-09-04"
+external_link: ""
+image:
+  caption: 
+  focal_point:
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/asvn90
+slides: 
+summary: A list of items that I use to create my videos.
+tags:
+- Software
+- Hardware
+- Recording gear
+title: My recording gear
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+---
+**Disclaimer: The Amazon links are affiliate links and the comission that I receive when you use one of my links will go towards improving my Youtube channel. Thanks for your support!**
+
+## Recording gear:
+📷 Sony a6000: https://amzn.to/31ZXRM8 
+
+💻 HP EliteBook 830 G6: https://amzn.to/3hZ5OGY 
+
+🎤 Samson Meteor mic: https://amzn.to/3h1FnyO 
+
+🎬 Video capture card: https://amzn.to/2F39uJc 
+
+## Software
+👾 Jupyter Notebook: https://jupyter.org/install
+
+👾 Open Broadcast Software: https://obsproject.com/
+inci Resolve 16: https://www.blackmagicdesign.com/uk/products/davinciresolve/
+
+
+
+
+

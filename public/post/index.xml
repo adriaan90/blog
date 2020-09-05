@@ -5,12 +5,37 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>My recording gear</title>
+      <link>/post/my-gear/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/my-gear/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;Disclaimer: The Amazon links are affiliate links and the comission that I receive when you use one of my links will go towards improving my Youtube channel. Thanks for your support!&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;recording-gear&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Recording gear:&lt;/h2&gt;
+&lt;p&gt;📷 Sony a6000: &lt;a href=&#34;https://amzn.to/31ZXRM8&#34; class=&#34;uri&#34;&gt;https://amzn.to/31ZXRM8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;💻 HP EliteBook 830 G6: &lt;a href=&#34;https://amzn.to/3hZ5OGY&#34; class=&#34;uri&#34;&gt;https://amzn.to/3hZ5OGY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;🎤 Samson Meteor mic: &lt;a href=&#34;https://amzn.to/3h1FnyO&#34; class=&#34;uri&#34;&gt;https://amzn.to/3h1FnyO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;🎬 Video capture card: &lt;a href=&#34;https://amzn.to/2F39uJc&#34; class=&#34;uri&#34;&gt;https://amzn.to/2F39uJc&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;software&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Software&lt;/h2&gt;
+&lt;p&gt;👾 Jupyter Notebook: &lt;a href=&#34;https://jupyter.org/install&#34; class=&#34;uri&#34;&gt;https://jupyter.org/install&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👾 Open Broadcast Software: &lt;a href=&#34;https://obsproject.com/&#34; class=&#34;uri&#34;&gt;https://obsproject.com/&lt;/a&gt;
+inci Resolve 16: &lt;a href=&#34;https://www.blackmagicdesign.com/uk/products/davinciresolve/&#34; class=&#34;uri&#34;&gt;https://www.blackmagicdesign.com/uk/products/davinciresolve/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Ideal Rankine Cycle with feedwater heater calculations</title>

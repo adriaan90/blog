@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: A Mechanical Engineer passionate about creating robust and innovative products and teaching other to do the same.
+bio: A Mechanical Engineer passionate about creating robust and innovative products and teaching others to do the same.
 education:
   courses:
   - course: PhD in Automotive Engineering
@@ -18,6 +18,7 @@ interests:
 - Programming engineering solutions
 - Validate models through experimentation
 - Continuously improving designs
+- Teaching others
 name: Adriaan van Niekerk
 organizations:
 - name: University of the West of England
