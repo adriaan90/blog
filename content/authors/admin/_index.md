@@ -39,7 +39,7 @@ social:
   link: https://github.com/adriaan90
 - icon: youtube
   icon_pack: fab
-  link: https://www.youtube.com/channel/UC62YcVWO968SSeAM1YK_C-w?view_as=subscriber 
+  link: https://www.youtube.com/c/adriaanvanniekerk?view_as=subscriber 
 
 superuser: true
 user_groups:
