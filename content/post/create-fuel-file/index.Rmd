@@ -31,8 +31,6 @@ You can use this to either create a .fue file consisting of one blend component,
 3. Ensure the command prompt is opened in the folder where the .dat files are saved. To change to the correct folder path:
   - Copy the file path in your Windows Explorer window. First open the folder where the files are.
 
-![](/create-fuel-file/index_files/file-path1.PNG){width=80%}
-
   - Click on the little folder icon on the left of the file path and copy the file path.
   - Use command `cd` followed by the file path and press enter.
   - The new line in the command prompt will now show that it is open in the folder where the .dat files are.
