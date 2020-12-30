@@ -24,9 +24,9 @@ url_video: ""
 # Create a fuel file in Ricardo WAVE
 
 The following instructions can be used to create a fuel file for Ricardo WAVE. 
-You can use this to either create a .fue file consisting of one blend component, or a blend with more than one.
+You can use this to either create a .fue file consisting of one blend component, or a blend with more than one:
 
-1. Ensure you have downloaddc the .dat files of the fuels you want to blend.
+1. Ensure you have downloaded the .dat files of the fuels you want to blend.
 2. Open up the command prompt window (Start button->Search->”cmd”-> click on cmd.exe)
 3. Ensure the command prompt is opened in the folder where the .dat files are saved. To change to the correct folder path:
   - Copy the file path in your Windows Explorer window. First open the folder where the files are.

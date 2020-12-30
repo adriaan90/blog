@@ -23,17 +23,14 @@
 &lt;div id=&#34;create-a-fuel-file-in-ricardo-wave&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Create a fuel file in Ricardo WAVE&lt;/h1&gt;
 &lt;p&gt;The following instructions can be used to create a fuel file for Ricardo WAVE.
-You can use this to either create a .fue file consisting of one blend component, or a blend with more than one.&lt;/p&gt;
+You can use this to either create a .fue file consisting of one blend component, or a blend with more than one:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Ensure you have downloaddc the .dat files of the fuels you want to blend.&lt;/li&gt;
+&lt;li&gt;Ensure you have downloaded the .dat files of the fuels you want to blend.&lt;/li&gt;
 &lt;li&gt;Open up the command prompt window (Start button-&amp;gt;Search-&amp;gt;”cmd”-&amp;gt; click on cmd.exe)&lt;/li&gt;
 &lt;li&gt;Ensure the command prompt is opened in the folder where the .dat files are saved. To change to the correct folder path:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;Copy the file path in your Windows Explorer window. First open the folder where the files are.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/create-fuel-file/index_files/file-path1.PNG&#34; style=&#34;width:80.0%&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Copy the file path in your Windows Explorer window. First open the folder where the files are.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;Click on the little folder icon on the left of the file path and copy the file path.&lt;/li&gt;
 &lt;li&gt;Use command &lt;code&gt;cd&lt;/code&gt; followed by the file path and press enter.&lt;/li&gt;
 &lt;li&gt;The new line in the command prompt will now show that it is open in the folder where the .dat files are.&lt;/li&gt;
